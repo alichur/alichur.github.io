@@ -1,0 +1,16 @@
+/* SECTIONS */
+section {
+  border-bottom: 1px solid #b4b5b5;
+  padding: 50px 0 90px 0;
+}
+
+section:last-child {
+  border: none;
+}
+
+/* HEADINGS */
+  .col-sm-3{
+  display: flex;
+  align-items: center;
+
+}
