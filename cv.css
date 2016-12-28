@@ -23,5 +23,9 @@ section:last-child {
 /* http://stackoverflow.com/questions/20626685/better-way-to-set-distance-between-flexbox-items*/
 .cv-entry{
   margin: 1.5em 1.5em 1.5em 1.5em;
+}
 
+.heading{
+  overflow: auto;
+margin: 1.5em 1.5em 1.5em 1.5em;
 }
