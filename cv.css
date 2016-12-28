@@ -1,6 +1,29 @@
 body {
   padding: 0;
   margin: 0;
+  font-family: garamond;
+}
+
+/* HEADING */
+.header {
+  background-color: #366dc4;
+  height: 20em;
+  color: white;
+  letter-spacing: 0.2em;
+}
+
+img {
+  max-width: 80%;
+  max-height: 80%;
+}
+
+h1{
+  font-family: Helvetica;
+  font-size: 5em;
+}
+h2 .header{
+  font-family: Helvetica;
+  font-size: 3em;
 }
 
 /* SECTIONS */
@@ -15,17 +38,28 @@ section:last-child {
 /* HEADINGS */
   .col-sm-3{
   align-items: center;
-  background-color:grey;
-
+  background-color: #f7f9fc;
 }
 
 /* CONTENT */
-/* http://stackoverflow.com/questions/20626685/better-way-to-set-distance-between-flexbox-items*/
 .cv-entry{
-  margin: 1.5em 1.5em 1.5em 1.5em;
+  margin: 0em 1.5em 0em 1.5em;
 }
 
-.heading{
+.cv-item-title{
+  font-family: Helvetica;
+}
+
+
+h4, h5{
+  display: inline-block;
+  margin-top: 1em;
+  margin-bottom:0;
+}
+
+.heading {
   overflow: auto;
-margin: 1.5em 1.5em 1.5em 1.5em;
+  margin: 1.5em 0em 1.5em 1.5em;
+  font-family: Helvetica;
+  word-wrap: break-word
 }
