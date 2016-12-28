@@ -1,7 +1,11 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
 /* SECTIONS */
 section {
   border-bottom: 1px solid #b4b5b5;
-  padding: 50px 0 90px 0;
 }
 
 section:last-child {
@@ -10,7 +14,14 @@ section:last-child {
 
 /* HEADINGS */
   .col-sm-3{
-  display: flex;
   align-items: center;
+  background-color:grey;
+
+}
+
+/* CONTENT */
+/* http://stackoverflow.com/questions/20626685/better-way-to-set-distance-between-flexbox-items*/
+.cv-entry{
+  margin: 1.5em 1.5em 1.5em 1.5em;
 
 }
