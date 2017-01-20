@@ -5,17 +5,6 @@ body {
 }
 
 /* HEADING */
-.header {
-  background-color: #366dc4;
-  height: 20em;
-  color: white;
-  letter-spacing: 0.2em;
-}
-
-img {
-  max-width: 80%;
-  max-height: 80%;
-}
 
 h1{
   font-family: Helvetica;
@@ -35,7 +24,7 @@ section:last-child {
   border: none;
 }
 
-/* HEADINGS */
+/* HEADING STRIP */
   .col-sm-3{
   align-items: center;
   background-color: #f7f9fc;
@@ -49,7 +38,6 @@ section:last-child {
 .cv-item-title{
   font-family: Helvetica;
 }
-
 
 h4, h5{
   display: inline-block;
