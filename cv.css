@@ -59,9 +59,16 @@ section:last-child, :first-child{
   margin: 1.5em 0em 1.5em 1.5em;
   font-family: Helvetica;
   word-wrap: break-word;
-    text-align: right;
+  text-align: center;
+
 }
 
 span {
   display: block;
+}
+
+@media only screen and (min-width: 48em) {
+  .heading {
+    text-align: right;
+  }
 }
