@@ -28,18 +28,11 @@ h4, h5 {
 /* SECTIONS */
 .headsection {
   background-color: #fcfeff;
-}
-
-section {
-  border-bottom: 1px solid #b4b5b5;
-}
-
-section:last-child, :first-child {
-  border: none;
+  border-bottom: 0.5px solid #b2cecf;
 }
 
 .intro {
-  margin: 0em 8em 3em 8em;
+  margin: 0em 3em 3em 3em;
   border-top: 2em solid #b2cecf;
 }
 
@@ -51,18 +44,22 @@ section:last-child, :first-child {
 
 .heading {
   overflow: auto;
-  margin: 1.5em 0em 1.5em 1.5em;
   font-family: Helvetica;
   word-wrap: break-word;
   text-align: center;
 }
 /* CONTENT */
 .cv-entry {
-  margin: 0em 8em 0em 1.5em;
+  margin: 0em 0em 0em 1.5em;
 }
 
 .cv-item-title {
   font-family: Helvetica;
+}
+
+.section-row {
+    border-bottom: 1px solid #b4b5b5;
+    margin: 0em 3em 0em 3em;
 }
 
 /* HANDLES HEADING STRIP SIDE -> TOP  */
