@@ -4,22 +4,22 @@ body {
   font-family: garamond;
 }
 
-h1{
+h1 {
   font-family: Helvetica;
   font-size: 5em;
 }
 
-.intro h2{
+.intro h2 {
   font-family: Helvetica;
   font-size: 3em;
 }
 
- h2{
+ h2 {
   font-family: Helvetica;
   font-size: 2.5em;
 }
 
-h4, h5{
+h4, h5 {
   display: inline-block;
   margin-top: 1em;
   margin-bottom:0;
@@ -30,12 +30,12 @@ section {
   border-bottom: 1px solid #b4b5b5;
 }
 
-section:last-child, :first-child{
+section:last-child, :first-child {
   border: none;
 }
 
 /* HEADINGS STRIP */
-  .col-sm-3{
+  .col-sm-3 {
   align-items: center;
   background-color: #f7f9fc;
 }
@@ -44,20 +44,19 @@ section:last-child, :first-child{
 .headsection {
   background-color: #fcfeff;
 }
+
 .intro {
   margin: 0em 8em 3em 8em;
   border-top: 2em solid #b2cecf;
-
 }
-.cv-entry{
+
+.cv-entry {
   margin: 0em 8em 0em 1.5em;
 }
 
-.cv-item-title{
+.cv-item-title {
   font-family: Helvetica;
 }
-
-
 
 .heading {
   overflow: auto;
@@ -65,15 +64,13 @@ section:last-child, :first-child{
   font-family: Helvetica;
   word-wrap: break-word;
   text-align: center;
-
 }
-
 
 @media only screen and (min-width: 48em) {
   .heading {
     text-align: right;
   }
   span {
-    display: block; /*when in side bar, subheadings should take up more vertical space.
+    display: block; /*when in side bar, subheadings should take up more vertical space.*/
   }
 }
