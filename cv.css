@@ -41,8 +41,13 @@ section:last-child, :first-child{
 }
 
 /* CONTENT */
+.headsection {
+  background-color: #fcfeff;
+}
 .intro {
   margin: 0em 8em 3em 8em;
+  border-top: 2em solid #b2cecf;
+
 }
 .cv-entry{
   margin: 0em 8em 0em 1.5em;
@@ -63,12 +68,12 @@ section:last-child, :first-child{
 
 }
 
-span {
-  display: block;
-}
 
 @media only screen and (min-width: 48em) {
   .heading {
     text-align: right;
+  }
+  span {
+    display: block; /*when in side bar, subheadings should take up more vertical space.
   }
 }
