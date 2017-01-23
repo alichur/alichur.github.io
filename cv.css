@@ -28,20 +28,23 @@ h4, h5 {
 /* SECTIONS */
 .headsection {
   background-color: #fcfeff;
-  border-bottom: 0.5px solid #b2cecf;
+  border-bottom: 0.5px solid #b4b5b5;
 }
 
 .intro {
-  margin: 0em 3em 3em 3em;
+  margin: 0em 3em 0em 3em;
   border-top: 2em solid #b2cecf;
 }
 
-/* HEADINGS STRIP */
-  .col-sm-3 {
+.blurbbox {
+  letter-spacing: 0.08em;
+  font-weight: lighter;
+  line-height: 1.5;
+  padding: 4em 2em 0em 2em;
   align-items: center;
-  background-color: #f7f9fc;
 }
 
+/* HEADINGS STRIP */
 .heading {
   overflow: auto;
   font-family: Helvetica;
