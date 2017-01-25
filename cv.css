@@ -1,28 +1,32 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: garamond;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 h1 {
-  font-family: Helvetica;
-  font-size: 5em;
+  font-size: 3.5em;
+  text-align: right;
+  letter-spacing: 0.18em;
 }
 
 .intro h2 {
-  font-family: Helvetica;
-  font-size: 3em;
+  letter-spacing: 0.1em;
+  text-align: right;
+  font-size: 2.5em;
 }
 
- h2 {
-  font-family: Helvetica;
-  font-size: 2.5em;
+ h3 {
+  font-size: 2em;
 }
 
 h4, h5 {
   display: inline-block;
   margin-top: 1em;
-  margin-bottom:0;
+  margin-bottom:0.2em;
+}
+h5 {
+  color: grey;
 }
 
 /* SECTIONS */
@@ -50,10 +54,7 @@ h4, h5 {
   font-family: Helvetica;
   word-wrap: break-word;
   text-align: center;
-}
-/* CONTENT */
-.cv-entry {
-  margin: 0em 0em 0em 1.5em;
+  margin-right:1.5em;
 }
 
 .cv-item-title {
@@ -62,7 +63,7 @@ h4, h5 {
 
 .section-row {
     border-bottom: 1px solid #b4b5b5;
-    margin: 0em 3em 0em 3em;
+    margin: 2em 3em 0em 3em;
 }
 
 /* HANDLES HEADING STRIP SIDE -> TOP  */
@@ -73,4 +74,8 @@ h4, h5 {
   span {
     display: block; /*when in side bar, subheadings should take up more vertical space.*/
   }
+
+  /* CONTENT */
+  .section-row {
+    margin: 2em 3em 0em 0em;
 }
