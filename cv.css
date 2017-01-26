@@ -45,11 +45,13 @@ h5 {
 
 }
 
-p {
+p, li {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #555F61;
-  /*color: #373D3F;*/
-  line-height: 1.5
+  line-height: 1.6;
+  margin-top: 0em;
+  font-size: 1.0em;
+
 }
 
 /* HEADING AREA */
@@ -86,17 +88,20 @@ p {
     margin: 2em 3em 0em 3em;
 }
 
-section {
-    border-bottom: 1px solid;
-    border-color: red;
+.col-sm-3 {
+  background-color: #b2cecf;
 }
 
 /* CONTENT */
 .skills, h5 {
   font-weight: 300;
   letter-spacing: 0.05rem;
-  font-weight: lighter;
 }
+
+.skills {
+  margin-top: 0.5em;
+}
+
 
 @media only screen and (min-width: 48em) {
   /* Title section */
@@ -112,6 +117,9 @@ section {
   }
   span {
     display: block;
+  }
+  .col-sm-3 {
+  background-color: white;
   }
   /* Content */
   section {
