@@ -7,28 +7,49 @@ body {
 h1 {
   font-size: 3.5em;
   text-align: left;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.1em;
+  font-weight: 500;
   margin-bottom: 0em;
 }
 
-.intro h2 {
-  letter-spacing: 0.1em;
-  text-align: left;
+h2 {
   font-size: 2.5em;
+  text-align: left;
+  letter-spacing: 0.1em;
+  font-weight: 300;
   margin-top: 0em;
 }
 
- h3 {
+h3 {
+  font-size: 1.5em;
+  font-weight: 600;
+  line-height: 1;
   font-size: 2em;
+}
+
+h4 {
+  font-size: 1.3em;
+  font-weight: 400;
+  margin-right: .5em;
 }
 
 h4, h5 {
   display: inline-block;
-  margin-top: 1em;
   margin-bottom:0.2em;
 }
+
 h5 {
-  color: grey;
+  font-weight: 300;
+  letter-spacing: 0.05rem;
+  font-weight: lighter;
+
+}
+
+p {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #555F61;
+  /*color: #373D3F;*/
+  line-height: 1.5
 }
 
 /* HEADING AREA */
@@ -49,14 +70,11 @@ h5 {
   align-items: center;
 }
 
-
-
 /* HEADINGS STRIP */
 .heading {
   overflow: auto;
   font-family: Helvetica;
   word-wrap: break-word;
-  text-align: center;
   margin-right:1.5em;
 }
 
@@ -65,25 +83,41 @@ h5 {
 }
 
 .section-row {
-    border-bottom: 1px solid #b4b5b5;
     margin: 2em 3em 0em 3em;
 }
 
-/* HANDLES HEADING STRIP SIDE -> TOP  */
+section {
+    border-bottom: 1px solid;
+    border-color: red;
+}
+
+/* CONTENT */
+.skills, h5 {
+  font-weight: 300;
+  letter-spacing: 0.05rem;
+  font-weight: lighter;
+}
+
 @media only screen and (min-width: 48em) {
+  /* Title section */
+  .blurbbox {
+  padding: 2em 2em 0em 2em;
+  }
+  .pic {
+  margin: 2em 4em 2em 0em;
+  }
+  /* Section headings */
   .heading {
     text-align: right;
   }
   span {
-    display: block; /*when in side bar, subheadings should take up more vertical space.*/
+    display: block;
   }
-.blurbbox {
-  padding: 2em 2em 0em 2em;
-}
-.pic {
-  margin: 2em 4em 2em 0em;
-}
-  /* CONTENT */
+  /* Content */
+  section {
+    border: none;
+  }
   .section-row {
-    margin: 2em 3em 0em 0em;
+    border-bottom: 1px solid #b4b5b5;
+  }
 }
