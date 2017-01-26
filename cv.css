@@ -30,7 +30,7 @@ h3 {
 h4 {
   font-size: 1.3em;
   font-weight: 400;
-  margin-right: .5em;
+  margin-right: .3em;
 }
 
 h4, h5 {
@@ -84,6 +84,11 @@ p, li {
   font-family: Helvetica;
 }
 
+.face-circle {
+  border-radius: 50%;
+  filter: grayscale(80%) contrast(120%) brightness(125%);
+}
+
 .section-row {
     margin: 2em 3em 0em 3em;
 }
@@ -103,7 +108,7 @@ p, li {
 }
 
 
-@media only screen and (min-width: 48em) {
+@media only screen and (min-width: 48em), print{
   /* Title section */
   .blurbbox {
   padding: 2em 2em 0em 2em;
@@ -127,5 +132,10 @@ p, li {
   }
   .section-row {
     border-bottom: 1px solid #b4b5b5;
+  }
+}
+@media  print {
+  body, html {
+    font-size: 11px;
   }
 }
