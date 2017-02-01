@@ -98,6 +98,12 @@ p, li, a {
   filter: grayscale(80%) contrast(120%) brightness(125%);
 }
 
+.face-container {
+  display:flex;
+  justify-content:center;
+  margin: 1em 0em 0em 0em;
+}
+
 .section-row {
     margin: 2em 3em 0em 3em;
 }
@@ -117,7 +123,7 @@ p, li, a {
   .blurbbox {
   padding: 2em 2em 0em 2em;
   }
-  .pic {
+  .face-container {
   margin: 2em 4em 2em 0em;
   }
   /* Section headings */
@@ -137,8 +143,12 @@ p, li, a {
   .section-row {
     padding-bottom:5em;
     border-bottom: 1px solid #b4b5b5;
-    margin-left: 0.5em;
   }
+
+  .section-row, .img {
+    margin-left: 3em;
+}
+
 }
 
 /* Print formatting - remove links, space text neatly over multiple pages  */
@@ -150,14 +160,9 @@ p, li, a {
 
   a {
     color: inherit;
-    /*text-decoration: inherit;*/
   }
 
   section {
     page-break-inside: avoid;
-  }
-
-  .break .section-row {
-    /*border-bottom: none;*/
   }
 }
