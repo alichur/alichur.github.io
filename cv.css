@@ -51,15 +51,29 @@ p, li, a {
   font-size: 1.0em;
 }
 
+/* prevent headings from taking up the entire screen on small device*/
+@media only screen and (max-width: 48em){
+  h1 {
+    font-size: 2.5em;
+  }
+  h2 {
+    font-size: 2em;
+  }
+  h3 {
+    font-size: 1.8em;
+  }
+}
+
+/* text sizing to prevent word wrapping when subheadings are in left panel */
 @media only screen and (min-width: 48em) and (max-width: 64em) {
   h3 {
     font-size: 1.2em;
   }
 }
 
-@media only screen and (min-width: 64em) and (max-width: 75em) {
+@media only screen and (min-width: 64em) and (max-width: 75em){
   h3 {
-      font-size: 1.7em;
+    font-size: 1.7em;
   }
 }
 
