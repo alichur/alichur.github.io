@@ -13,7 +13,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2.5em;
+  font-size: 3em;
   text-align: left;
   letter-spacing: 0.1em;
   font-weight: 300;
@@ -106,6 +106,8 @@ p, li, a {
 
 .section-row {
     margin: 2em 3em 0em 3em;
+    padding-bottom:3em;
+    border-bottom: 1px solid #b4b5b5;
 }
 
 /* CONTENT */
@@ -140,15 +142,10 @@ p, li, a {
   section {
     border: none;
   }
-  .section-row {
-    padding-bottom:5em;
-    border-bottom: 1px solid #b4b5b5;
-  }
 
   .section-row, .img {
     margin-left: 3em;
-}
-
+  }
 }
 
 /* Print formatting - remove links, space text neatly over multiple pages  */
@@ -164,5 +161,9 @@ p, li, a {
 
   section {
     page-break-inside: avoid;
+  }
+
+  .section-row {
+    padding-top: 2em;
   }
 }
