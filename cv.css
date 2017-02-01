@@ -84,7 +84,7 @@ p, li, a {
 }
 
 .intro {
-  margin: 0em 3em 0em 3em;
+  margin: 0em 2em 0em 2em;
   border-top: 2em solid #b2cecf;
 }
 
@@ -119,7 +119,7 @@ p, li, a {
 }
 
 .section-row {
-    margin: 2em 3em 0em 3em;
+    margin: 2em 2em 0em 2em;
     padding-bottom:3em;
     border-bottom: 1px solid #b4b5b5;
 }
