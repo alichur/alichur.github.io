@@ -48,7 +48,6 @@ p, li, a {
   color: #555F61;
   line-height: 1.6;
   margin-top: 0.4em;
-  font-size: 1.0em;
 }
 
 /* prevent headings from taking up the entire screen on small device*/
@@ -86,13 +85,6 @@ p, li, a {
 .intro {
   margin: 0em 2em 0em 2em;
   border-top: 2em solid #b2cecf;
-}
-
-.blurbbox {
-  letter-spacing: 0.08em;
-  font-weight: lighter;
-  line-height: 1.5;
-  margin-top:1em;
 }
 
 /* HEADINGS STRIP */
@@ -136,9 +128,6 @@ p, li, a {
 
 @media only screen and (min-width: 48em), print{
   /* Title section */
-  .blurbbox {
-  padding: 2em 2em 0em 2em;
-  }
   .face-container {
   margin: 2em 4em 2em 0em;
   }
