@@ -22,17 +22,19 @@ a.hamburger {
     display: none;
 }
 
-@media (max-width: 500px) {
-    nav {
+@media (max-width: 700px) {
+    #main-nav {
         display: none;
     }
     ul {
         flex-direction: column;
     }
-    nav.is-active {
+    #main-nav.is-active {
         display: block;
     }
     #open-menu {
+        width: 80px;
+        height: 80px;
         display: block;
     }
     /* a.hamburger {
