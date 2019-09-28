@@ -11,25 +11,40 @@ header {
 }
 
 nav {
-flex-grow: 1;
+    flex-grow: 1;
 }
 
-@media (max-width: 500px) { 
-    nav > ul {
-        flex-direction: column;
+a.hamburger {
+    display: none;
+}
+
+#open-menu {
+    display: none;
+}
+
+@media (max-width: 500px) {
+    nav {
         display: none;
     }
-
-    a.hamburger {
+    ul {
+        flex-direction: column;
+    }
+    nav.is-active {
+        display: block;
+    }
+    #open-menu {
+        display: block;
+    }
+    /* a.hamburger {
         align-self: flex-end;
         width: 80px;
         height: 80px;
         background: url("./hamburger-menu.jpg");
         background-repeat: no-repeat;
         background-size: contain;
-        }
-        a.hamburger:hover {
-            width: 90px;
-            height: 90px
-            }
-}     
+    }
+    a.hamburger:hover {
+        width: 90px;
+        height: 90px
+    } */
+}

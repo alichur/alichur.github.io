@@ -1,23 +1,31 @@
 <!doctype html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="utf-8">
+
+    <title>title</title>
+    <link href="website.css" rel="stylesheet">
+    <script src="menu.js"></script>
+
 </head>
- <link href="website.css" rel="stylesheet" >
 
 <body>
-  <header>
-  <nav>
-    <ul class="horizontal">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="/philosophy/">Philosophy</a></li>
-      <li><a href="/blog/">Blog</a></li>
-      <li><a href="cv.html">CV</a></li>
-    </ul>
-  </nav>
-  <a class="hamburger"></a>
-</header>
-  My website
+    <header>
+        <nav id="main-nav">
+            <!-- <button id="close-menu">close menu</button> -->
+            <!-- <a class="close"></a> -->
+            <ul class="horizontal">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="/philosophy/">Philosophy</a></li>
+                <li><a href="/blog/">Blog</a></li>
+                <li><a href="cv.html">CV</a></li>
+            </ul>
+        </nav>
+        <button id="open-menu">open menu</button>
+        <!-- <a class="hamburger"></a> -->
+    </header>
+    TODO: mobile first, media query for big screen not small. Add menu button keyboard nav/accssibility https://www.w3.org/TR/wai-aria-practices/examples/menu-button/menu-button-links.html
 </body>
 
 </html>
