@@ -1,7 +1,6 @@
 header {
-    padding: 3em;
-    height: 10em;
-    background-color: bisque;
+    padding: 1em;
+    height: 4em;
 }
 
 nav {
@@ -9,47 +8,81 @@ nav {
     flex-direction: row;
 }
 
-ul {
+.nav-items {
     font-size: 2em;
     flex-grow: 1;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+.nav-item {
+    padding: 0.5em;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
 }
 
 main {
-    padding: 10em;
+    padding: 5em;
+}
+
+h1 {
+    font-size: 6em;
+}
+
+article {
+    font-size: 1.5em;
 }
 
 .hamburger-toggle {
     display: none;
 }
 
+.intro {
+    max-width: 25em;
+}
+
+li[tabindex="0"]:focus,
+li:hover {
+    background: #00C6F0;
+}
+
 @media (max-width: 700px) {
     header {
-        justify-content: flex-end;
-        align-items: flex-end;
+        background: yellow;
+        height: auto;
+        min-height: 4em;
     }
     nav {
+        width: 100%;
         flex-direction: column;
+        text-align: right;
         align-items: flex-end;
+    }
+    main {
+        padding: 1em;
+    }
+    h1 {
+        font-size: 3em;
     }
     .nav-items {
         display: none;
     }
     .nav-items.is-active {
         display: block;
-        width: 30%;
-        flex-grow: 0;
         flex-direction: column;
+        justify-content: space-between;
     }
     .hamburger-toggle {
-        width: 4em;
-        height: 4em;
+        border: none;
+        background-color: inherit;
+        text-decoration: none;
+        width: 6em;
+        height: 6em;
         display: block;
-        background: url("./hamburger-menu.jpg");
-        background-repeat: no-repeat;
-        background-size: contain;
-        align-self: flex-end;
     }
 }

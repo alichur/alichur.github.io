@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>Ali Churcher</title>
     <link href="website.css" rel="stylesheet">
+
     <script src="menu.js"></script>
 
 </head>
@@ -12,18 +13,20 @@
 <body>
     <header>
         <nav>
-            <button class="hamburger-toggle" id="js-menu-toggle"></button>
+            <button class="hamburger-toggle" id="js-menu-toggle">
+                <img src="./hamburger.svg"/>
+            </button>
             <ul class="nav-items" id="js-nav-items">
-                <li><a href="index.html ">Home</a></li>
-                <li><a href="/philosophy/ ">Philosophy</a></li>
-                <li><a href="/blog/ ">Blog</a></li>
-                <li><a href="cv.html ">CV</a></li>
+                <li class="nav-item" tabindex="0"><a href="index.html" role="menuitem">Home</a></li>
+                <li class="nav-item" tabindex="0"><a href="/philosophy/" role="menuitem">Philosophy</a></li>
+                <li class="nav-item" tabindex="0"><a href="/blog/" role="menuitem">Blog</a></li>
+                <li class="nav-item" tabindex="0"><a href="cv.html" role="menuitem">CV</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        TODO: mobile first, media query for big screen not small. mid sized screen vs mobile. Add menu button keyboard nav/accssibility https://www.w3.org/TR/wai-aria-practices/examples/menu-button/menu-button-links.html
-    </main>
+        <h1>Ali <br/> Churcher</h1>
+        <article class="intro">Hi, I'm Ali. I like creating easy to use software from easy to maintain code. You'll mostly find me in front-end code bases, but I have backend experience, and a new found interest in mobile development.</article>
 </body>
 
 </html>
