@@ -32,7 +32,7 @@ nav {
 
 /* underline effect for top nav */
 
-.nav-item a::after {
+.nav-item::after {
     content: '';
     position: absolute;
     top: 0;
@@ -44,7 +44,8 @@ nav {
     transition: all .4s ease;
 }
 
-.nav-item a:hover::after {
+.nav-item:hover::after,
+.nav-item[tabindex="0"]:focus::after {
     width: 80%;
 }
 
