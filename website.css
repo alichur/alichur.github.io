@@ -4,7 +4,8 @@ html {
 
 header {
     padding: 1em;
-    height: 4em;
+    height: auto;
+    min-height: 8em;
 }
 
 nav {
@@ -13,6 +14,7 @@ nav {
 }
 
 .nav-items {
+    margin: 0;
     font-size: 2em;
     flex-grow: 1;
     display: flex;
@@ -23,7 +25,7 @@ nav {
 
 .nav-item {
     position: relative;
-    padding: 0.5em;
+    padding: 1.5em .5em 1em .5em;
     text-align: center;
 }
 
@@ -46,17 +48,37 @@ nav {
     width: 80%;
 }
 
+
+/* Full stop animation */
+
+h1::after {
+    content: '.';
+}
+
+h1:hover::after {
+    font-size: .2em;
+    content: '😊';
+}
+
 a {
     color: inherit;
     text-decoration: none;
 }
 
+li {
+    outline: none;
+}
+
 main {
-    padding: 5em;
+    padding: 1em 5em 1em 5em;
 }
 
 h1 {
-    font-size: 6em;
+    font-size: 5em;
+}
+
+.dot {
+    display: none;
 }
 
 article {
@@ -105,9 +127,15 @@ article {
         height: 6em;
         display: block;
     }
+    .hamburgerSvg:hover {
+        width: 6.5em;
+        width: 6.5em;
+    }
+    svg:hover {
+        fill: red;
+    }
     li[tabindex="0"]:focus,
     li:hover {
         background: #CCCCCC;
-        font-weight: 700;
     }
 }
