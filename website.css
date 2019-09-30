@@ -1,3 +1,7 @@
+html {
+    background-color: #fdfdff;
+}
+
 header {
     padding: 1em;
     height: 4em;
@@ -18,7 +22,28 @@ nav {
 }
 
 .nav-item {
+    position: relative;
     padding: 0.5em;
+    text-align: center;
+}
+
+
+/* underline effect for top nav */
+
+.nav-item a::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 10%;
+    right: 10%;
+    bottom: 0;
+    width: 0%;
+    border-bottom: 1px solid black;
+    transition: all .4s ease;
+}
+
+.nav-item a:hover::after {
+    width: 80%;
 }
 
 a {
@@ -46,14 +71,8 @@ article {
     max-width: 25em;
 }
 
-li[tabindex="0"]:focus,
-li:hover {
-    background: #00C6F0;
-}
-
 @media (max-width: 700px) {
     header {
-        background: yellow;
         height: auto;
         min-height: 4em;
     }
@@ -73,6 +92,7 @@ li:hover {
         display: none;
     }
     .nav-items.is-active {
+        width: 100%;
         display: block;
         flex-direction: column;
         justify-content: space-between;
@@ -84,5 +104,10 @@ li:hover {
         width: 6em;
         height: 6em;
         display: block;
+    }
+    li[tabindex="0"]:focus,
+    li:hover {
+        background: #CCCCCC;
+        font-weight: 700;
     }
 }
