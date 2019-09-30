@@ -139,4 +139,8 @@ article {
     li:hover {
         background: #CCCCCC;
     }
+    .nav-item:hover::after,
+    .nav-item[tabindex="0"]:focus::after {
+        width: 0%;
+    }
 }
