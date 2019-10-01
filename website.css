@@ -124,6 +124,10 @@ h1:hover::after {
         width: 6.5em;
         width: 6.5em;
     }
+    /* Remove outline for non-keyboard focus on Chrome */
+    .hamburger-toggle:focus:not(.focus-visible) {
+        outline: none;
+    }
     li:hover {
         background: #CCCCCC;
     }
