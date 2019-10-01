@@ -1,5 +1,15 @@
-html {
-    background-color: #fdfdff;
+html,
+body {
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+*:before,
+*:after {
+    box-sizing: border-box;
 }
 
 header {
@@ -16,6 +26,7 @@ nav {
 .nav-items {
     margin: 0;
     font-size: 2em;
+    letter-spacing: .04em;
     flex-grow: 1;
     display: flex;
     flex-direction: row;
@@ -30,9 +41,9 @@ nav {
 }
 
 
-/* underline effect for top nav */
+/* underline effect for top nav  */
 
-.nav-item::after {
+.nav-item a::after {
     content: '';
     position: absolute;
     top: 0;
@@ -44,8 +55,7 @@ nav {
     transition: all .4s ease;
 }
 
-.nav-item:hover::after,
-.nav-item[tabindex="0"]:focus::after {
+.nav-item a:hover::after {
     width: 80%;
 }
 
@@ -66,16 +76,13 @@ a {
     text-decoration: none;
 }
 
-li {
-    outline: none;
-}
-
 main {
     padding: 1em 5em 1em 5em;
 }
 
 h1 {
-    font-size: 5em;
+    font-size: 3em;
+    letter-spacing: .02em;
 }
 
 .dot {
@@ -83,7 +90,7 @@ h1 {
 }
 
 article {
-    font-size: 1.5em;
+    font-size: 1.4em;
 }
 
 .hamburger-toggle {
@@ -135,12 +142,12 @@ article {
     svg:hover {
         fill: red;
     }
-    li[tabindex="0"]:focus,
+    li[tabindex="0"] a:focus,
     li:hover {
         background: #CCCCCC;
     }
-    .nav-item:hover::after,
-    .nav-item[tabindex="0"]:focus::after {
+    .nav-item a:hover::after,
+    {
         width: 0%;
     }
 }
