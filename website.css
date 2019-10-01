@@ -7,13 +7,14 @@ body {
     box-sizing: border-box;
 }
 
+ul {}
+
 *:before,
 *:after {
     box-sizing: border-box;
 }
 
 header {
-    padding: 1em;
     height: auto;
     min-height: 8em;
 }
@@ -24,7 +25,6 @@ nav {
 }
 
 .nav-items {
-    margin: 0;
     font-size: 2em;
     letter-spacing: .04em;
     flex-grow: 1;
@@ -32,6 +32,8 @@ nav {
     flex-direction: row;
     justify-content: flex-end;
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .nav-item {
@@ -127,6 +129,10 @@ article {
         flex-direction: column;
         justify-content: space-between;
     }
+    .nav-item {
+        padding: .5em;
+        width: 100%;
+    }
     .hamburger-toggle {
         border: none;
         background-color: inherit;
@@ -146,8 +152,7 @@ article {
     li:hover {
         background: #CCCCCC;
     }
-    .nav-item a:hover::after,
-    {
+    .nav-item a:hover::after {
         width: 0%;
     }
 }
