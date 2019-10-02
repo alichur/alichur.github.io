@@ -62,7 +62,7 @@ a {
     width: 80%;
 }
 
-@media (max-width: 999px) {
+@media (max-width: 699px) {
     .header {
         min-height: 4em;
     }
