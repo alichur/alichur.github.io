@@ -9,7 +9,6 @@
 .card {
     box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.15);
     transition: 0.2s;
-    overflow: hidden;
     width: 16em;
     height: 20em;
     margin: 1em;
