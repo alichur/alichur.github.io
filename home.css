@@ -1,0 +1,24 @@
+/* Full stop animation */
+
+h1::after {
+    content: '.';
+}
+
+h1:hover::after {
+    font-size: .2em;
+    content: '😊';
+}
+
+.name {
+    font-size: 3em;
+    letter-spacing: .02em;
+}
+
+.dot {
+    display: none;
+}
+
+.intro {
+    font-size: 1.4em;
+    max-width: 25em;
+}
