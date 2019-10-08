@@ -2,497 +2,454 @@
 <html>
 
 <head>
-  <title>Ali - Software Engineer</title>
-  <link rel="stylesheet" href="flexboxgrid.min.css">
-  <link rel="stylesheet" href="cv.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ali - Software Engineer</title>
+    <link rel="stylesheet" href="flexboxgrid.min.css">
+    <link rel="stylesheet" href="cv.css">
+    <link rel="stylesheet" href="common.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
-  <!-- HEADING -->
-  <section class="headsection">
-    <div class="row intro">
-      <div class="col-sm-3 col-xs-12">
-        <div class="face-container">
-          <img class="face-circle" src="photo.jpg">
+    <!-- NAVIGATION-->
+    <nav class="nav">
+        <button tabindex="0" class="hamburger-toggle" id="js-menu-toggle">
+            <img class="hamburger-svg" src="./hamburger.svg" />
+        </button>
+        <ul class="nav-items" id="js-nav-items">
+            <li class="nav-item" tabindex="0"><a href="index.html" tabindex="-1" role="menuitem">Home</a></li>
+            <li class="nav-item" tabindex="0"><a href="blog.html" tabindex="-1" role="menuitem">Blog</a></li>
+            <li class="nav-item" tabindex="0"><a href="cv.html" tabindex="-1" role="menuitem">CV</a></li>
+        </ul>
+    </nav>
+    <!-- HEADING (PRINT VERSION ONLY)-->
+    <section class="print-headsection">
+        <div class="row intro">
+            <div class="col-sm-3 col-xs-12">
+                <div class="face-container">
+                    <img class="face-circle" src="photo.jpg">
+                </div>
+            </div>
+            <div class="col-sm-9 col-xs-12">
+                <div class="row">
+                    <div class="applicant">
+                        <h1>ALI CHURCHER</h1>
+                        <h2>Software Engineer</h2>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="col-sm-9 col-xs-12">
-        <div class="row">
-          <div class="applicant">
-            <h1>ALI CHURCHER</h1>
-            <h2>Software Engineer</h2>
-          </div>
+    </section>
+    <!-- WORK HISTORY -->
+    <section class="break">
+        <div class="row section-row">
+            <div class="col-sm-3 col-xs-12">
+                <div class="heading">
+                    <h3>
+                        <span>Work</span>
+                        <span>History</span>
+                    </h3>
+                </div>
+            </div>
+            <div class="col-sm-9">
+                <div class="row cv-entry">
+                    <div>
+                        <div class="cv-item-title">
+                            <h4>Intermediate / Senior Front-End Software Developer &#8226 Liefery
+                            </h4>
+                            <h5>Apr 2017 - Sep 2019</h5>
+                        </div>
+                        <div class="skills">
+                            <p>
+                                Flutter, Dart, JavaScript, React, Webpack, Ruby, Rails, Redux, CSS Modules, Gatsby, Git, HTML, CSS, AngularJS
+                            </p>
+                        </div>
+                        <div class="cv-item">
+                            <p>
+                                After taking several months to travel the world and settle in Berlin, I became the first Front-End Software Developer at Liefery, a delivery and SaaS logistical software company. Working in a small IT department (~12) meant I had large degree of independence
+                                to make architecture, design, and technology decisions. I spoke to customers for feedback, deployed and supported the code I wrote, and mentored other colleagues. After 1.5 years I was promoted from Intermediate to Senior.
+                            </p>
+                            Project Highlights:
+                            <ul>
+                                <li>Created two websites from scratch: <a href="https://www.liefery.com/">Liefery's homepage</a> and a whitelabel customer delivery tracking website (React, Redux, CSS-modules, Gatsby). </li>
+                                <li>Implemented a CSV uploader (AngularJS). </li>
+                                <li>Seconded to a backend team to implement a model change allowing customers to change the time of their deliveries. Added API endpoints to receive multipart image requests (Ruby on Rails). </li>
+                                <li>Wrote the two most top viewed posts on the <a href="https://engineering.liefery.com/">Engineering Blog. </a></li>
+                            </ul>
+                            <p>
+                            </p>
+                            <p>
+                                My final and favourite role at Liefery was rewriting a Android/Scala mobile application in Flutter and Dart. The new codebase had an emphasis on functional typed code and redux style state management. I also personally added processes to build a close
+                                relationship with our QA colleague and implemented a Flutter end-to-end automated testing framework from scratch.
+                            </p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row cv-entry">
+                    <div>
+                        <div class="cv-item-title">
+                            <h4>Intermediate Software Engineer &#8226 Orion Health
+                            </h4>
+                            <h5>Apr 2015 - Apr 2016</h5>
+                        </div>
+                        <div class="skills">
+                            <p>
+                                JavaScript, YUI3, Java, REST, Git, SCSS, CSS, HTML, Ant, Grunt
+                            </p>
+                        </div>
+                        <div class="cv-item">
+                            <p>
+                                As a full stack developer I worked on a
+                                <a href="https://orionhealth.com/global/products/medicines/ ">Medicines</a> single page application for hospitals. I added features to allow doctors to add notes to medications and monitor changes to a patient's medication
+                                history. I wrote JavaScript unit tests for new and existing modules, fixed bugs, and refactored old code. I provided weekly coaching sessions for a graduate developer on another team, and helped train all new starts on
+                                my own team.
+                            </p>
+                            <p>
+                                I was fortunate to interact with doctors who used Orion health software at the hospital. Seeing such a frantic environment where software errors could affect a patient's health gave me a drive to always create intuitive and reliable software.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row cv-entry">
+                    <div>
+                        <div class="cv-item-title">
+                            <h4>Junior / Intermediate Test Engineer &#8226 Orion Health</h4>
+                            <h5>Jan 2012 - Apr 2015</h5>
+                        </div>
+                        <div class="skills">
+                            <p>
+                                Selenium WebDriver, Java, Bamboo, Cucumber, MSSQL, Oracle, VM management, Hibernate, OSGi, Jira, Confluence
+                            </p>
+                        </div>
+                        <div class="cv-item">
+                            <p>
+                                Thorough testing was important in my role testing the hospital web application
+                                <a href="https://orionhealth.com/global/products/consult/">Diagnostic Orders</a>. I wrote automated end to end tests to simulate frequent workflows such as a doctor ordering X-rays and blood tests for a patient. I set up
+                                an office Testing Guild and was responsible for designing test plans and leading pre-release testing activities. I was the scrum master for my team for 6 months of this period.
+                            </p>
+                            <p>
+                                After two years as a tester I set a goal to move into development. I gained a Java certification, attended architecture meetings, and picked up larger and larger development tasks before formally changing my title to Software Developer.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row cv-entry">
+                    <div class="cv-item-title">
+                        <h4>Software Engineering Tutor &#8226 Lincoln University
+                        </h4>
+                        <h5>
+                            2011 Semester one</h5>
+                    </div>
+                    <div class="cv-item">
+                        <p>
+                            I was the tutor for the first year programming paper. This role involved assisting in the preparation and marking of formal assessments, and helping students to understand object oriented programming concepts during practical classes.
+                        </p>
+                    </div>
+                </div>
+                <div class="row cv-entry">
+                    <div>
+                        <div class="cv-item-title">
+                            <h4>Research Assistant &#8226 University of Canterbury</h4>
+                            <h5>Nov 2011- Feb 2012</h5>
+                        </div>
+                        <div class="cv-item">
+                            <p>
+                                As a research assistant I worked on a visualisation project that used tag cloud information visualisation techniques to solve software engineering problems.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row cv-entry">
+                    <div>
+                        <div class="cv-item-title">
+                            <h4>Retail Assistant &#8226 Marbecks</h4>
+                            <h5>
+                                2007-2011</h5>
+                        </div>
+                        <div class="cv-item">
+                            <p>
+                                My part time job during university was at a store selling CDs, Blue Rays, and books. I trained staff members, did the banking, and helped customers.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
-  <!-- WORK HISTORY -->
-  <section class="break">
-    <div class="row section-row">
-      <div class="col-sm-3 col-xs-12">
-        <div class="heading">
-          <h3>
-            <span>Work</span>
-            <span>History</span>
-          </h3>
+    </section>
+    <!-- EDUCATION-->
+    <section>
+        <div class="row section-row">
+            <div class="col-sm-3 col-xs-12">
+                <div class="heading">
+                    <h3>
+                        <span>Education &</span>
+                        <span>Certifications</span>
+                    </h3>
+                </div>
+            </div>
+            <div class="col-sm-9">
+                <div class="row cv-entry">
+                    <div>
+                        <div class="cv-item-title">
+                            <h4>Graduate Diploma in Software & Information Technology &#8226 Lincoln University</h4>
+                            <h5>
+                                (2009-2010)</h5>
+                        </div>
+                        <div class="cv-item">
+                            <p>
+                                This qualification involved several team projects and data modelling papers.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row cv-entry">
+                    <div>
+                        <div class="cv-item-title">
+                            <h4>Bachelor of Music with Honours &#8226 University of Otago</h4>
+                            <h5>
+                                (2006-2009)</h5>
+                        </div>
+                        <div class="cv-item">
+                            <p>
+                                I specialised in composition, theory, and performance Gamelan. I was the student representative on a panel to chose the next Mozart fellow for the department.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row cv-entry">
+                    <div>
+                        <div class="cv-item-title">
+                            <h4>Oracle Certified Java Developer</h4>
+                            <h5>
+                                (2014)</h5>
+                        </div>
+                        <div class="cv-item">
+                            <p>
+                                A Java certification that focussed on good design principles and in-depth details of the Java language.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row cv-entry">
+                    <div>
+                        <div class="cv-item-title">
+                            <h4>ISTQB</h4>
+                            <h5>
+                                (2012)</h5>
+                        </div>
+                        <div class="cv-item">
+                            <p>
+                                A testing certification for very formal testing environments.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row cv-entry">
+                    <div>
+                        <div class="cv-item-title">
+                            <h4>Associate Trinity College London</h4>
+                            <h5>
+                                (2002)</h5>
+                        </div>
+                        <div class="cv-item">
+                            <p>
+                                A.T.C.L Diploma in performance Flute.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="col-sm-9">
-        <div class="row cv-entry">
-          <div>
-            <div class="cv-item-title">
-              <h4>Intermediate / Senior Front-End Software Developer &#8226 Liefery
-              </h4>
-              <h5>Apr 2017 - Sep 2019</h5>
+    </section>
+    <!-- AWARDS & SCHOLARSHIPS-->
+    <section class="break">
+        <div class="row section-row">
+            <div class="col-sm-3 col-xs-12">
+                <div class="heading">
+                    <h3>
+                        <span>Awards &</span>
+                        <span>Scholarships</span>
+                    </h3>
+                </div>
             </div>
-            <div class="skills">
-              <p>
-                Flutter, Dart, JavaScript, React, Webpack, Ruby, Rails, Redux, CSS Modules, Gatsby, Git, HTML, CSS,
-                AngularJS
-              </p>
+            <div class="col-sm-9">
+                <div class="row cv-entry">
+                    <div>
+                        <div class="cv-item-title">
+                            <h4>Jade Prize</h4>
+                            <h5>
+                                Lincoln University (2011)</h5>
+                        </div>
+                        <div class="cv-item">
+                            <p>
+                                Awarded by the Jade Software Corporation for first place in the third year Software Engineering paper.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row cv-entry">
+                    <div>
+                        <div class="cv-item-title">
+                            <h4>Charles Begg Prize</h4>
+                            <h5>
+                                University of Otago (2009)</h5>
+                        </div>
+                        <div class="cv-item">
+                            <p>
+                                Awarded by the music department for the top student in Fourth Year Honours.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row cv-entry">
+                    <div>
+                        <div class="cv-item-title">
+                            <h4>Bonded Merit Scholarship</h4>
+                            <h5>
+                                University of Otago (2007, 2008, 2009)</h5>
+                        </div>
+                        <div class="cv-item">
+                            <p>
+                                Awarded by the New Zealand Education Ministry to recognise top academic achievement in bachelor degree study.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="cv-item">
-              <p>
-                After taking several months to travel the world and settle in Berlin,
-                I became the first Front-End Software Developer at Liefery, a delivery and SaaS logistical software
-                company.
-                Working in a small IT department (~12)
-                meant I had large degree of independence to make architecture, design, and technology decisions.
-                I spoke to customers for feedback, deployed and supported the code I wrote, and mentored other
-                colleagues.
-                After 1.5 years I was promoted from Intermediate to Senior.
-              </p>
-              Project Highlights:
-              <ul>
-                <li>Created two websites from scratch: <a href="https://www.liefery.com/">Liefery's homepage</a>
-                  and a whitelabel customer delivery tracking website (React, Redux, CSS-modules, Gatsby). </li>
-                <li>Implemented a CSV uploader (AngularJS). </li>
-                <li>Seconded to a backend team to implement a model change allowing customers to change the time of
-                  their deliveries.
-                  Added API endpoints to receive multipart image requests (Ruby on Rails). </li>
-                <li>Wrote the two most top viewed posts on the <a href="https://engineering.liefery.com/">Engineering Blog. </a></li>
-              </ul>
-              <p>
-              </p>
-              <p>
-                My final and favourite role at Liefery was rewriting a Android/Scala mobile application in Flutter and
-                Dart.
-                The new codebase had an emphasis on functional typed code and redux style state management.
-                I also personally added processes to build a close
-                relationship with our QA colleague and implemented a Flutter end-to-end automated testing framework from
-                scratch.
-              </p>
-              </p>
-            </div>
-          </div>
         </div>
-        <div class="row cv-entry">
-          <div>
-            <div class="cv-item-title">
-              <h4>Intermediate Software Engineer &#8226 Orion Health
-              </h4>
-              <h5>Apr 2015 - Apr 2016</h5>
+    </section>
+    <!-- Peronal Development-->
+    <section>
+        <div class="row section-row">
+            <div class="col-sm-3 col-xs-12">
+                <div class="heading">
+                    <h3>
+                        <span>Personal</span>
+                        <span>Development</span>
+                    </h3>
+                </div>
             </div>
-            <div class="skills">
-              <p>
-                JavaScript, YUI3, Java, REST, Git, SCSS, CSS, HTML, Ant, Grunt
-              </p>
-            </div>
-            <div class="cv-item">
-              <p>
-                As a full stack developer I worked on a
-                <a href="https://orionhealth.com/global/products/medicines/ ">Medicines</a>
-                single page application for hospitals. I added features to allow doctors to add notes to medications and
-                monitor changes to a
-                patient's medication history. I wrote JavaScript unit tests for new and existing modules, fixed bugs,
-                and refactored old
-                code. I provided weekly coaching sessions for a graduate developer on another team, and helped train all
-                new starts on my own
-                team.
-              </p>
-              <p>
-                I was fortunate to interact with doctors who used Orion health software at the hospital. Seeing such a
-                frantic environment
-                where software errors could affect a patient's health gave me a drive to always create intuitive and
-                reliable software.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="row cv-entry">
-          <div>
-            <div class="cv-item-title">
-              <h4>Junior / Intermediate Test Engineer &#8226 Orion Health</h4>
-              <h5>Jan 2012 - Apr 2015</h5>
-            </div>
-            <div class="skills">
-              <p>
-                Selenium WebDriver, Java, Bamboo, Cucumber, MSSQL, Oracle, VM management, Hibernate, OSGi, Jira,
-                Confluence
-              </p>
-            </div>
-            <div class="cv-item">
-              <p>
-                Thorough testing was important in my role testing the hospital web application
-                <a href="https://orionhealth.com/global/products/consult/">Diagnostic Orders</a>. I wrote automated end
-                to end tests to
-                simulate frequent workflows such as a doctor ordering X-rays and blood tests for a patient. I set up an
-                office Testing Guild
-                and was responsible for designing test plans and leading pre-release testing activities. I was the scrum
-                master for my team
-                for 6 months of this period.
-              </p>
-              <p>
-                After two years as a tester I set a goal to move into development. I gained a Java certification,
-                attended architecture
-                meetings, and picked up larger and larger development tasks before formally changing my title to
-                Software Developer.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="row cv-entry">
-          <div class="cv-item-title">
-            <h4>Software Engineering Tutor &#8226 Lincoln University
-            </h4>
-            <h5>
-              2011 Semester one</h5>
-          </div>
-          <div class="cv-item">
-            <p>
-              I was the tutor for the first year programming paper. This role involved assisting in the preparation and
-              marking of formal
-              assessments, and helping students to understand object oriented programming concepts during practical
-              classes.
-            </p>
-          </div>
-        </div>
-        <div class="row cv-entry">
-          <div>
-            <div class="cv-item-title">
-              <h4>Research Assistant &#8226 University of Canterbury</h4>
-              <h5>Nov 2011- Feb 2012</h5>
-            </div>
-            <div class="cv-item">
-              <p>
-                As a research assistant I worked on a visualisation project that used tag cloud information
-                visualisation techniques to solve
-                software engineering problems.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="row cv-entry">
-          <div>
-            <div class="cv-item-title">
-              <h4>Retail Assistant &#8226 Marbecks</h4>
-              <h5>
-                2007-2011</h5>
-            </div>
-            <div class="cv-item">
-              <p>
-                My part time job during university was at a store selling CDs, Blue Rays, and books. I trained staff
-                members, did the
-                banking, and helped customers.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- EDUCATION-->
-  <section>
-    <div class="row section-row">
-      <div class="col-sm-3 col-xs-12">
-        <div class="heading">
-          <h3>
-            <span>Education &</span>
-            <span>Certifications</span>
-          </h3>
-        </div>
-      </div>
-      <div class="col-sm-9">
-        <div class="row cv-entry">
-          <div>
-            <div class="cv-item-title">
-              <h4>Graduate Diploma in Software & Information Technology &#8226 Lincoln University</h4>
-              <h5>
-                (2009-2010)</h5>
-            </div>
-            <div class="cv-item">
-              <p>
-                This qualification involved several team projects and data modelling papers.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="row cv-entry">
-          <div>
-            <div class="cv-item-title">
-              <h4>Bachelor of Music with Honours &#8226 University of Otago</h4>
-              <h5>
-                (2006-2009)</h5>
-            </div>
-            <div class="cv-item">
-              <p>
-                I specialised in composition, theory, and performance Gamelan. I was the student representative on a
-                panel to chose the next
-                Mozart fellow for the department.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="row cv-entry">
-          <div>
-            <div class="cv-item-title">
-              <h4>Oracle Certified Java Developer</h4>
-              <h5>
-                (2014)</h5>
-            </div>
-            <div class="cv-item">
-              <p>
-                A Java certification that focussed on good design principles and in-depth details of the Java language.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="row cv-entry">
-          <div>
-            <div class="cv-item-title">
-              <h4>ISTQB</h4>
-              <h5>
-                (2012)</h5>
-            </div>
-            <div class="cv-item">
-              <p>
-                A testing certification for very formal testing environments.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="row cv-entry">
-          <div>
-            <div class="cv-item-title">
-              <h4>Associate Trinity College London</h4>
-              <h5>
-                (2002)</h5>
-            </div>
-            <div class="cv-item">
-              <p>
-                A.T.C.L Diploma in performance Flute.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- AWARDS & SCHOLARSHIPS-->
-  <section class="break">
-    <div class="row section-row">
-      <div class="col-sm-3 col-xs-12">
-        <div class="heading">
-          <h3>
-            <span>Awards &</span>
-            <span>Scholarships</span>
-          </h3>
-        </div>
-      </div>
-      <div class="col-sm-9">
-        <div class="row cv-entry">
-          <div>
-            <div class="cv-item-title">
-              <h4>Jade Prize</h4>
-              <h5>
-                Lincoln University (2011)</h5>
-            </div>
-            <div class="cv-item">
-              <p>
-                Awarded by the Jade Software Corporation for first place in the third year Software Engineering paper.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="row cv-entry">
-          <div>
-            <div class="cv-item-title">
-              <h4>Charles Begg Prize</h4>
-              <h5>
-                University of Otago (2009)</h5>
-            </div>
-            <div class="cv-item">
-              <p>
-                Awarded by the music department for the top student in Fourth Year Honours.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="row cv-entry">
-          <div>
-            <div class="cv-item-title">
-              <h4>Bonded Merit Scholarship</h4>
-              <h5>
-                University of Otago (2007, 2008, 2009)</h5>
-            </div>
-            <div class="cv-item">
-              <p>
-                Awarded by the New Zealand Education Ministry to recognise top academic achievement in bachelor degree
-                study.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Peronal Development-->
-  <section>
-    <div class="row section-row">
-      <div class="col-sm-3 col-xs-12">
-        <div class="heading">
-          <h3>
-            <span>Personal</span>
-            <span>Development</span>
-          </h3>
-        </div>
-      </div>
-      <div class="col-sm-9">
-        <div class="row cv-entry">
-          <div class="cv-item-title">
-            <h4>Junior Development Board</h4>
-          </div>
-          <div class="cv-item">
-            <p>
-              I was selected by the CEO of Orion Health for a position on the Junior Development Board. The board's
-              purpose was to work
-              with senior leadership to bring fresh ideas for change to the company. For example, as a way to improve
-              staff retention we
-              removed some heavy software release processes and introduced volunteering days to employees.
-            </p>
-          </div>
-        </div>
-        <div class="row cv-entry">
-          <div>
-            <div class="cv-item-title">
-              <h4>Agile Development Experience</h4>
-            </div>
-            <div class="cv-item">
-              <p>
-                I have practiced Agile Software Development in a variety of settings such as distributed teams and
-                collaborating with an
-                outsourcing company. At Orion Health I enjoyed evolving our team processes for example updating our
-                'Definition of Done' and
-                refining branching strategies. I was given the opportunity to attend these multiple day agile courses:
-                <p>
-                  <ul>
-                    <li>"Specification by Example" from
-                      <a href="https://gojko.net">Goiko Adzic.
+            <div class="col-sm-9">
+                <div class="row cv-entry">
+                    <div class="cv-item-title">
+                        <h4>Junior Development Board</h4>
+                    </div>
+                    <div class="cv-item">
+                        <p>
+                            I was selected by the CEO of Orion Health for a position on the Junior Development Board. The board's purpose was to work with senior leadership to bring fresh ideas for change to the company. For example, as a way to improve staff retention we removed
+                            some heavy software release processes and introduced volunteering days to employees.
+                        </p>
+                    </div>
+                </div>
+                <div class="row cv-entry">
+                    <div>
+                        <div class="cv-item-title">
+                            <h4>Agile Development Experience</h4>
+                        </div>
+                        <div class="cv-item">
+                            <p>
+                                I have practiced Agile Software Development in a variety of settings such as distributed teams and collaborating with an outsourcing company. At Orion Health I enjoyed evolving our team processes for example updating our 'Definition of Done' and refining
+                                branching strategies. I was given the opportunity to attend these multiple day agile courses:
+                                <p>
+                                    <ul>
+                                        <li>"Specification by Example" from
+                                            <a href="https://gojko.net">Goiko Adzic.
                       </a>
-                    </li>
-                    <li>
-                      "Agile Facilitation" from
-                      <a href="http://agilecoachinginstitute.com/coaches/">
-                        Agile Coaching Institute</a>
-                      Michael K. Spayd and Lyssa Adkins.
-                    </li>
-                  </ul>
-                </p>
-              </p>
+                                        </li>
+                                        <li>
+                                            "Agile Facilitation" from
+                                            <a href="http://agilecoachinginstitute.com/coaches/">
+                        Agile Coaching Institute</a> Michael K. Spayd and Lyssa Adkins.
+                                        </li>
+                                    </ul>
+                                </p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row cv-entry">
+                    <div>
+                        <div class="cv-item-title">
+                            <h4>Office Culture</h4>
+                        </div>
+                        <div class="cv-item">
+                            <p>
+                                During my 4 years at Orion Health the office size grew from 20 to 100 and I took a leading role in keeping our close friendly working culture alive and welcoming new members to the office. I founded the office social club and organised several weekend
+                                events. I started a rugby and netball team and entered our office into a friendly local tournament.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row cv-entry">
+                    <div>
+                        <div class="cv-item-title">
+                            <h4>Self learning</h4>
+                        </div>
+                        <div class="cv-item">
+                            <p>My current interests are Responsive design, React, and the JavaScript series by Kyle Simpson. Currently I am working on a React project to display my personal health data I have retrieved from FitBit's API.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-        <div class="row cv-entry">
-          <div>
-            <div class="cv-item-title">
-              <h4>Office Culture</h4>
+    </section>
+    <!-- Community-->
+    <section class="break">
+        <div class="row section-row">
+            <div class="col-sm-3 col-xs-12">
+                <div class="heading">
+                    <h3>
+                        <span>Community</span>
+                    </h3>
+                </div>
             </div>
-            <div class="cv-item">
-              <p>
-                During my 4 years at Orion Health the office size grew from 20 to 100 and I took a leading role in
-                keeping our close friendly
-                working culture alive and welcoming new members to the office. I founded the office social club and
-                organised several weekend
-                events. I started a rugby and netball team and entered our office into a friendly local tournament.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="row cv-entry">
-          <div>
-            <div class="cv-item-title">
-              <h4>Self learning</h4>
-            </div>
-            <div class="cv-item">
-              <p>My current interests are Responsive design, React, and the JavaScript series by Kyle Simpson. Currently
-                I am working on a
-                React project to display my personal health data I have retrieved from FitBit's API.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Community-->
-  <section class="break">
-    <div class="row section-row">
-      <div class="col-sm-3 col-xs-12">
-        <div class="heading">
-          <h3>
-            <span>Community</span>
-          </h3>
-        </div>
-      </div>
-      <div class="col-sm-9">
-        <div class="row cv-entry">
-          <div>
-            <div class="cv-item-title">
-              <h4>External Presentations</h4>
-            </div>
-            <div class="cv-item">
-              <ul>
-                <li>
-                  I hosted and presented at a
-                  <a href="https://www.meetup.com/Christchurch-Test-Professionals-Network/events/220540924/">Testing
-                    Professionals meetup</a>
-                  discussing Behaviour Driven Development techniques.
-                </li>
-                <li>
-                  I presented Facilitation techniques at a meetup for the
-                  <a href="https://www.meetup.com/Christchurch-Agile-Professionals-Network/">Agile professions
+            <div class="col-sm-9">
+                <div class="row cv-entry">
+                    <div>
+                        <div class="cv-item-title">
+                            <h4>External Presentations</h4>
+                        </div>
+                        <div class="cv-item">
+                            <ul>
+                                <li>
+                                    I hosted and presented at a
+                                    <a href="https://www.meetup.com/Christchurch-Test-Professionals-Network/events/220540924/">Testing
+                    Professionals meetup</a> discussing Behaviour Driven Development techniques.
+                                </li>
+                                <li>
+                                    I presented Facilitation techniques at a meetup for the
+                                    <a href="https://www.meetup.com/Christchurch-Agile-Professionals-Network/">Agile professions
                     Network.</a>
-                </li>
-                <li>
-                  I was a
-                  <a href="http://www.futureintech.org.nz/1088/0/quals/222/ali-churcher">
-                    Futureintech ambassador</a>. This involved speaking at local schools to encourage students to
-                  consider a technology career.
-                </li>
-              </ul>
+                                </li>
+                                <li>
+                                    I was a
+                                    <a href="http://www.futureintech.org.nz/1088/0/quals/222/ali-churcher">
+                    Futureintech ambassador</a>. This involved speaking at local schools to encourage students to consider a technology career.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row cv-entry">
+                    <div>
+                        <div class="cv-item-title">
+                            <h4>Attendee</h4>
+                        </div>
+                        <div class="cv-item">
+                            <ul>
+                                <li>
+                                    Berlin.JS Meetup, Node.js Meetup (Berlin).
+                                </li>
+                                <li>
+                                    Conferences: JSCraftCamp (Munich), NodeConf (Christchurch), OWASP.
+                                </li>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-        <div class="row cv-entry">
-          <div>
-            <div class="cv-item-title">
-              <h4>Attendee</h4>
-            </div>
-            <div class="cv-item">
-              <ul>
-                <li>
-                  Berlin.JS Meetup, Node.js Meetup (Berlin).
-                </li>
-                <li>
-                  Conferences: JSCraftCamp (Munich), NodeConf (Christchurch), OWASP.
-                </li>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 </body>
 
 </html>
