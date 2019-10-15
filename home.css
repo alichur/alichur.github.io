@@ -1,24 +1,38 @@
-/* Full stop animation */
-
-h1::after {
-    content: '.';
-}
-
-h1:hover::after {
-    font-size: .2em;
-    content: '😊';
-}
-
 .name {
+    font-family: "Times New Roman", Times, serif;
     font-size: 3em;
     letter-spacing: .02em;
-}
-
-.dot {
-    display: none;
 }
 
 .intro {
     font-size: 1.4em;
     max-width: 25em;
+}
+
+.letter {
+    display: block;
+    line-height: 0.55;
+    margin: 0;
+}
+
+.container {
+    display: inline-block;
+}
+
+
+/*  Bouncing Animation */
+
+@keyframes bounce {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+    to {
+        transform: translate3d(0, -20px, 0);
+    }
+}
+
+.bouncing {
+    animation: bounce 0.4s;
+    animation-iteration-count: 4;
+    animation-direction: alternate;
 }
