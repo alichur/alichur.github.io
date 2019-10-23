@@ -108,7 +108,7 @@ a {
     .hamburger-toggle:focus:not(.focus-visible) {
         outline: none;
     }
-    li:hover {
+    nav-item:hover {
         background: #CCCCCC;
     }
     .nav-item a:hover::after {
