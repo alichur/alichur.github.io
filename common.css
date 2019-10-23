@@ -130,6 +130,11 @@ a {
 .social-media-item {
     display: inline-block;
     width: 45px;
+    position: relative;
+}
+
+.social-media-item:active {
+    top: 1px;
 }
 
 .github {
@@ -164,9 +169,9 @@ a {
     background-color: #2867b2;
 }
 
-.github,
-.twitter,
 .email,
+.twitter,
+.github,
 .linkedin {
     display: block;
     border-radius: 50%;
