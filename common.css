@@ -108,7 +108,7 @@ a {
     .hamburger-toggle:focus:not(.focus-visible) {
         outline: none;
     }
-    nav-item:hover {
+    .nav-item:hover {
         background: #CCCCCC;
     }
     .nav-item a:hover::after {
@@ -133,9 +133,11 @@ a {
     position: relative;
 }
 
+
+/* button pressed effect */
+
 .social-media-item:active {
     top: 1px;
-    outline: none;
 }
 
 .github {
@@ -172,7 +174,6 @@ a {
 .linkedin:hover,
 .linkedin:active {
     background-color: #2867b2;
-    outline: none;
 }
 
 .email,
