@@ -127,7 +127,7 @@ a {
 
 .social-media-item {
     display: inline-block;
-    width: 50px;
+    width: 40px;
 }
 
 .github {
@@ -151,7 +151,7 @@ a {
 }
 
 .email:hover {
-    background-color: darkslategray;
+    background-color: grey;
 }
 
 .linkedin {
@@ -168,11 +168,11 @@ a {
 .linkedin {
     display: block;
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     color: white;
     padding: 10px;
     background-repeat: no-repeat;
     background-origin: content-box;
-    background-color: grey;
+    background-color: #969ea2;
 }
