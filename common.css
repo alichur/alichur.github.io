@@ -115,3 +115,44 @@ a {
         width: 0%;
     }
 }
+
+
+/* Social Media links */
+
+.social-media {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.social-media-item {
+    display: inline-block;
+    width: 40px;
+}
+
+.github {
+    background-image: url("icons/github.svg");
+}
+
+.twitter {
+    background: url("icons/twitter.svg");
+}
+
+.email {
+    background-image: url("icons/email.svg");
+}
+
+.linkedin {
+    width: 100px;
+    background-image: url("icons/linkedin.svg");
+}
+
+.github,
+.twitter,
+.email,
+.linkedin {
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    display: block;
+}
