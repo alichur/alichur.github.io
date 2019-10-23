@@ -135,13 +135,15 @@ a {
 
 .social-media-item:active {
     top: 1px;
+    outline: none;
 }
 
 .github {
     background-image: url("icons/github.svg");
 }
 
-.github:hover {
+.github:hover,
+.github:active {
     background-color: #6e5494;
 }
 
@@ -149,7 +151,8 @@ a {
     background: url("icons/twitter.svg");
 }
 
-.twitter:hover {
+.twitter:hover,
+.twitter:active {
     background-color: #00acee;
 }
 
@@ -157,7 +160,8 @@ a {
     background-image: url("icons/email.svg");
 }
 
-.email:hover {
+.email:hover,
+.email:active {
     background-color: grey;
 }
 
@@ -165,8 +169,10 @@ a {
     background-image: url("icons/linkedin.svg");
 }
 
-.linkedin:hover {
+.linkedin:hover,
+.linkedin:active {
     background-color: #2867b2;
+    outline: none;
 }
 
 .email,
