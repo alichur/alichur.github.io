@@ -123,11 +123,13 @@ a {
     list-style: none;
     display: flex;
     justify-content: flex-start;
+    margin: 0;
+    padding: 3em 0 0 0;
 }
 
 .social-media-item {
     display: inline-block;
-    width: 40px;
+    width: 45px;
 }
 
 .github {
