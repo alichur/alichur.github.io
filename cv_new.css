@@ -1,0 +1,57 @@
+.wrapper {
+    width: 210mm;
+    height: 297mm;
+    display: grid;
+    /* max-height: 100%; */
+    /* fr represents a fraction of the available space */
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "work certifications" "work  awards" "work  community" "education  community" "education  community" "education  community";
+    grid-gap: 10px;
+    background-color: blue;
+    color: yellow;
+}
+
+.box {
+    background-color: red;
+}
+
+.work {
+    grid-area: work;
+}
+
+.education {
+    grid-area: education;
+}
+
+.certifications {
+    grid-area: certifications;
+}
+
+.education {
+    grid-area: education;
+}
+
+.awards {
+    grid-area: awards;
+}
+
+.community {
+    grid-area: community;
+}
+
+@media print {
+    html,
+    body {
+        width: 210mm;
+        height: 297mm;
+    }
+    .header {
+        display: none;
+    }
+}
+
+@page {
+    margin: 0;
+    size: A4 portrait;
+}

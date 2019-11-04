@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+html,
+body {
+    /* height: 100%; */
+}
+
 body {
     font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
@@ -41,6 +46,7 @@ a {
 }
 
 .wrapper {
+    /* height: 100%; */
     padding: 1em 5em 1em 5em;
 }
 
