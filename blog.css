@@ -20,6 +20,10 @@
     box-shadow: 0 10px 18px 0 rgba(0, 0, 0, 0.15);
 }
 
+.animated-i .title {
+    background-color: #e52e71;
+}
+
 .flutter .title {
     background-color: #4484CE;
 }
