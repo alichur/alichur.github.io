@@ -1,57 +1,114 @@
-.wrapper {
-    width: 210mm;
-    height: 297mm;
-    display: grid;
-    /* max-height: 100%; */
-    /* fr represents a fraction of the available space */
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: "work certifications" "work  awards" "work  community" "education  community" "education  community" "education  community";
-    grid-gap: 10px;
-    background-color: blue;
-    color: yellow;
-}
-
-.box {
-    background-color: red;
-}
-
-.work {
-    grid-area: work;
-}
-
-.education {
-    grid-area: education;
-}
-
-.certifications {
-    grid-area: certifications;
-}
-
-.education {
-    grid-area: education;
-}
-
-.awards {
-    grid-area: awards;
-}
-
-.community {
-    grid-area: community;
-}
-
-@media print {
-    html,
-    body {
+    /* todo use specific classes not Heading tags for safety */
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+        margin-top: 0.7em;
+        margin-bottom: 0.7em;
+    }
+    
+    .cv {
         width: 210mm;
         height: 297mm;
+        display: grid;
+        /* max-height: 100%; */
+        /* fr represents a fraction of the available space */
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: "personal personal" "work education" "work  awards" "work  awards" "work  certifications" "community  certifications" "community  certifications";
+        grid-gap: 10px;
+        color: black;
+        border: 1px solid black;
+        padding: 0.8em;
     }
-    .header {
-        display: none;
+    
+    .section-name {
+        font-size: 1em;
+        text-transform: uppercase;
+        opacity: 0.5;
     }
-}
-
-@page {
-    margin: 0;
-    size: A4 portrait;
-}
+    
+    h3 {
+        font-weight: 600;
+    }
+    
+    .institute {
+        font-size: 1em;
+        font-weight: 500;
+    }
+    
+    .personal {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .contact-info {}
+    
+    .date {
+        display: inline-block;
+        font-size: 0.8em;
+        opacity: 0.5;
+        font-weight: normal;
+    }
+    
+    .name {
+        font-size: 3em;
+        font-weight: 400;
+        margin-bottom: 0.2em;
+    }
+    
+    .profession {
+        font-size: 1.5em;
+    }
+    
+    .box {
+        /* border: 1px solid grey; */
+    }
+    
+    .personal {
+        grid-area: personal;
+    }
+    
+    .work {
+        grid-area: work;
+    }
+    
+    .education {
+        grid-area: education;
+    }
+    
+    .certifications {
+        grid-area: certifications;
+    }
+    
+    .education {
+        grid-area: education;
+    }
+    
+    .awards {
+        grid-area: awards;
+    }
+    
+    .community {
+        grid-area: community;
+    }
+    
+    @media print {
+        html,
+        body {
+            width: 210mm;
+            height: 297mm;
+        }
+        .header {
+            display: none;
+        }
+    }
+    
+    @page {
+        margin: 0;
+        size: A4 portrait;
+    }
