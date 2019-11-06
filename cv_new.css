@@ -22,7 +22,7 @@
         grid-template-areas: "personal personal" "work education" "work  awards" "work  certifications" "work  community" "work  community" "work  community";
         grid-gap: 10px;
         color: black;
-        border: 1px solid black;
+        /* border: 1px solid black; */
         padding: 0.8em;
     }
     
@@ -32,14 +32,14 @@
         margin: 0;
     }
     
+    .job-title {
+        font-size: 1em;
+    }
+    
     .section-name {
         font-size: 1em;
         text-transform: uppercase;
         opacity: 0.5;
-    }
-    
-    h3 {
-        font-weight: 600;
     }
     
     .company-blurb {
@@ -54,7 +54,12 @@
     }
     
     .details {
+        padding-left: 2em;
         font-size: 14px;
+    }
+    
+    .details>li {
+        padding-bottom: 0.4em;
     }
     
     .institute,
@@ -135,6 +140,11 @@
     }
     
     @page {
+        padding: 0;
         margin: 0;
         size: A4 portrait;
+    }
+    
+    body {
+        /* margin: 0; */
     }
