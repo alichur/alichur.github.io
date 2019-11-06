@@ -38,7 +38,7 @@
     width: 100%;
     height: 40%;
     background-color: white;
-    padding: 1em 2em 1em 2em;
+    padding: 0.5em 2em 1em 2em;
 }
 
 .title {
@@ -56,6 +56,6 @@
 
 @media (min-width: 700px) {
     .blogs {
-        flex-direction: row;
+        flex-flow: row wrap;
     }
 }
