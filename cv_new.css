@@ -19,11 +19,17 @@
         /* fr represents a fraction of the available space */
         grid-template-columns: 2fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-areas: "personal personal" "work education" "work  awards" "work  awards" "work  certifications" "community  certifications" "community  certifications";
+        grid-template-areas: "personal personal" "work education" "work  awards" "work  certifications" "work  community" "work  community" "work  community";
         grid-gap: 10px;
         color: black;
         border: 1px solid black;
         padding: 0.8em;
+    }
+    
+    .section-name,
+    .technologies,
+    .job-title {
+        margin: 0;
     }
     
     .section-name {
@@ -39,6 +45,16 @@
     .company-blurb {
         font-size: 0.7em;
         opacity: 0.7;
+    }
+    
+    .technologies {
+        padding: 0 3em 0 3em;
+        opacity: 0.6;
+        font-size: 0.8em;
+    }
+    
+    .details {
+        font-size: 14px;
     }
     
     .institute,
