@@ -1,6 +1,6 @@
 .name {
-    font-family: "Times New Roman", Times, serif;
-    font-size: 3em;
+    font-family   : "Times New Roman", Times, serif;
+    font-size     : 3em;
     letter-spacing: .02em;
 }
 
@@ -10,9 +10,9 @@
 }
 
 .letter {
-    display: block;
+    display    : block;
     line-height: 0.55;
-    margin: 0;
+    margin     : 0;
 }
 
 .container {
@@ -26,13 +26,14 @@
     from {
         transform: translate3d(0, 0, 0);
     }
+
     to {
         transform: translate3d(0, -20px, 0);
     }
 }
 
 .bouncing {
-    animation: bounce 0.4s;
+    animation                : bounce 0.4s;
     animation-iteration-count: 4;
-    animation-direction: alternate;
+    animation-direction      : alternate;
 }
