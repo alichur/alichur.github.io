@@ -1,3 +1,14 @@
+body {
+    font-size: 80%;
+}
+
+/* VARIABLES */
+
+:root {
+    --primary-color: #ffffd0;
+    --accent-color : blue;
+}
+
 /* CSS GRID LAYOUT */
 
 .cv {
@@ -12,14 +23,16 @@
         "awards"
         "certifications"
         "community";
-    grid-gap   : 10px;
-    color      : black;
-    /* border  : 1px solid black; */
-    padding    : 0.8em;
+    grid-gap: 10px;
+    color   : black;
+    border  : 1px solid black;
+    padding : 0.8em;
 }
 
 .personal {
-    grid-area: personal;
+    grid-area      : personal;
+    display        : flex;
+    justify-content: space-between;
 }
 
 .work {
@@ -44,36 +57,28 @@
 
 /* TEXT AND LAYOUT */
 
+.profession,
+.institute {
+    color: var(--accent-color)
+}
+
 .section-name {
-    font-size     : 1em;
     text-transform: uppercase;
     opacity       : 0.5;
 }
 
 .name {
-    font-size    : 3em;
     font-weight  : 400;
     margin-bottom: 0.2em;
 }
 
-.profession {
-    font-size: 1.5em;
-}
-
-.job-title,
-.degree {
-    font-size: 1em;
-}
-
 .technologies {
-    padding  : 0 3em 0 3em;
-    opacity  : 0.6;
-    font-size: 0.8em;
+    padding: 0 3em 0 3em;
+    opacity: 0.6;
 }
 
 .details {
     padding-left: 2em;
-    font-size   : 14px;
     font-weight : 100;
     /* ok sans serif */
     /* font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif; */
@@ -89,14 +94,9 @@
     padding-bottom: 0.4em;
 }
 
-.institute,
-.award {
-    font-size: 0.8em;
-}
-
 .date {
+    color      : grey;
     display    : inline-block;
-    font-size  : 0.8em;
     opacity    : 0.5;
     font-weight: normal;
 }
