@@ -41,8 +41,7 @@ a {
 }
 
 .wrapper {
-    /* height: 100%; */
-    padding  : 1em 5em 1em 5em;
+    padding: 1em 5em 1em 5em;
 }
 
 .hamburger-toggle {

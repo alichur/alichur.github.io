@@ -1,0 +1,158 @@
+.cv {
+    font-size: 80%;
+}
+
+/* VARIABLES */
+
+:root {
+    --primary-color : #ffffd0;
+    --accent-color  : #0C85D0;
+    --secondary-text: grey;
+}
+
+/* CSS GRID LAYOUT */
+
+.cv {
+    /* font-family                                                     : Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif; */
+    font-family                                                        : "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+    /* font-family                                                     : system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif; */
+
+    display              : grid;
+    grid-template-columns: 1fr;
+    grid-template-areas  : "personal"
+        "work"
+        "education"
+        "awards"
+        "certifications"
+        "community";
+    grid-gap   : 30px;
+    /* border  : 1px solid black; */
+    padding    : 0.8em;
+}
+
+.grid-area {
+    /* background-color: red; */
+}
+
+.personal {
+    grid-area      : personal;
+    display        : flex;
+    justify-content: space-between;
+    padding        : 2em;
+}
+
+.work {
+    grid-area: work;
+}
+
+.education {
+    grid-area: education;
+}
+
+.awards {
+    grid-area: awards;
+}
+
+.certifications {
+    grid-area: certifications;
+}
+
+.community {
+    grid-area: community;
+}
+
+/* TEXT AND LAYOUT */
+
+.profession,
+.institute {
+    color: var(--accent-color);
+}
+
+.section-name {
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size     : 0.9em;
+    color         : var(--secondary-text);
+}
+
+.name {
+    font-size    : 3em;
+    font-weight  : 400;
+    margin-bottom: 0.2em;
+}
+
+.technologies {
+    padding: 0 3em 0 3em;
+    color  : var(--secondary-text);
+
+}
+
+.details {
+    padding-left: 2em;
+    font-weight : 400;
+    font-family : system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+}
+
+.details>li {
+    padding-bottom: 0.4em;
+}
+
+.date {
+    color      : var(--secondary-text);
+    display    : inline-block;
+    font-weight: normal;
+}
+
+/* LARGE SCREEN */
+
+@media (min-width: 700px) {
+    .cv {
+        display              : grid;
+        width                : 210mm;
+        height               : 297mm;
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas  :
+            "personal personal"
+            "work education"
+            "work awards"
+            "work certifications"
+            "work community"
+            "work community"
+            "work community";
+    }
+}
+
+/* PRINTS CV TO A SINGLE A4 PAGE */
+
+@media print {
+    .cv {
+        display              : grid;
+        width                : 210mm;
+        height               : 297mm;
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas  :
+            "personal personal"
+            "work education"
+            "work awards"
+            "work certifications"
+            "work community"
+            "work community"
+            "work community";
+    }
+
+    html,
+    body {
+        width : 210mm;
+        height: 297mm;
+    }
+
+    .header {
+        display: none;
+    }
+}
+
+@page {
+    padding: 0;
+    margin : 0;
+    size   : A4 portrait;
+}
