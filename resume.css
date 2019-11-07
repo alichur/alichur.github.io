@@ -25,9 +25,9 @@
         "awards"
         "certifications"
         "community";
-    grid-gap   : 30px;
-    /* border  : 1px solid black; */
-    padding    : 0.8em;
+    grid-gap: 30px;
+    border  : 1px solid black;
+    padding : 0.8em;
 }
 
 .grid-area {
@@ -88,12 +88,12 @@
 }
 
 .details {
-    padding-left: 2em;
-    font-weight : 400;
-    font-family : system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+    font-weight: 400;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
 }
 
 .details>li {
+    padding-left  : 2em;
     padding-bottom: 0.4em;
 }
 
