@@ -1,33 +1,4 @@
-/* todo use specific classes not Heading tags for safety */
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-    margin-top   : 0.7em;
-    margin-bottom: 0.7em;
-}
-
 /* CSS GRID LAYOUT */
-
-@media (min-width: 700px) {
-    .cv {
-        width                : 210mm;
-        height               : 297mm;
-        grid-template-columns: 2fr 1fr;
-        grid-template-areas  :
-            "personal personal"
-            "work education"
-            "work awards"
-            "work certifications"
-            "work community"
-            "work community"
-            "work community";
-    }
-}
 
 .cv {
     display              : grid;
@@ -39,10 +10,10 @@ p {
         "awards"
         "certifications"
         "community";
-    grid-gap: 10px;
-    color   : black;
-    border  : 1px solid black;
-    padding : 0.8em;
+    grid-gap   : 10px;
+    color      : black;
+    /* border  : 1px solid black; */
+    padding    : 0.8em;
 }
 
 .personal {
@@ -118,14 +89,26 @@ p {
     font-weight: normal;
 }
 
-.section-name,
-.technologies,
-.job-title {
-    margin: 0;
+/* LARGE SCREEN */
+
+@media (min-width: 700px) {
+    .cv {
+        display              : grid;
+        width                : 210mm;
+        height               : 297mm;
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas  :
+            "personal personal"
+            "work education"
+            "work awards"
+            "work certifications"
+            "work community"
+            "work community"
+            "work community";
+    }
 }
 
 /* PRINTS CV TO A SINGLE A4 PAGE */
-
 
 @media print {
 
