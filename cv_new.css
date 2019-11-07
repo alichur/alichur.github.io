@@ -1,10 +1,12 @@
 /* CSS GRID LAYOUT */
 
 .cv {
-    display              : grid;
-    grid-template-columns: 1fr;
-    grid-template-areas  :
-        "personal"
+    /* font-family                                         : Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif; */
+    font-family                                            : "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+    /* font-family                                         : Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif; */
+    display                                                : grid;
+    grid-template-columns                                  : 1fr;
+    grid-template-areas                                    : "personal"
         "work"
         "education"
         "awards"
@@ -40,7 +42,7 @@
     grid-area: community;
 }
 
-/* FONTS AND SIZES */
+/* TEXT AND LAYOUT */
 
 .section-name {
     font-size     : 1em;
@@ -58,7 +60,8 @@
     font-size: 1.5em;
 }
 
-.job-title {
+.job-title,
+.degree {
     font-size: 1em;
 }
 
@@ -71,6 +74,15 @@
 .details {
     padding-left: 2em;
     font-size   : 14px;
+    font-weight : 100;
+    /* ok sans serif */
+    /* font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif; */
+    /* ok but dark sans serif */
+    /* font-family   : "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif; */
+    /* font-family   : "Graphik Web", HelveticaNeueBold, HelveticaNeue-Bold, "Helvetica Neue Bold", HelveticaBold, Helvetica-Bold, "Helvetica Bold", HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif; */
+    font-family      : Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
+    /* serif cambriax, garamond, constantia
+    sans helvetica, calibri, avenir, Lato */
 }
 
 .details>li {
