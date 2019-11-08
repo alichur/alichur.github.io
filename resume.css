@@ -8,6 +8,7 @@
     --primary-color : #ffffd0;
     --accent-color  : #0C85D0;
     --secondary-text: grey;
+    --close-spacing : 0.2em;
 }
 
 /* CSS GRID LAYOUT */
@@ -22,12 +23,15 @@
     grid-template-areas  : "personal"
         "work"
         "education"
+        "skills"
         "awards"
         "certifications"
-        "community";
-    grid-gap: 30px;
-    border  : 1px solid black;
-    padding : 0.8em;
+        "community"
+        "hobbies";
+    row-gap   : 15px;
+    column-gap: 40px;
+    border    : 1px solid black;
+    padding   : 0.8em;
 }
 
 .grid-area {
@@ -43,6 +47,10 @@
 
 .work {
     grid-area: work;
+}
+
+.skills {
+    grid-area: skills;
 }
 
 .education {
@@ -68,6 +76,24 @@
     color: var(--accent-color);
 }
 
+p {
+    line-height: 1.5;
+}
+
+.job-title,
+.award,
+.degree {
+    margin-bottom: 0;
+}
+
+.institute {
+    margin-top: var(--close-spacing);
+}
+
+.community .institute {
+    margin-bottom: var(--close-spacing);
+}
+
 .section-name {
     text-transform: uppercase;
     letter-spacing: 0.2em;
@@ -78,26 +104,28 @@
 .name {
     font-size    : 3em;
     font-weight  : 400;
-    margin-bottom: 0.2em;
+    margin-bottom: var(--close-spacing);
 }
 
-.technologies {
-    padding: 0 3em 0 3em;
-    color  : var(--secondary-text);
 
+.technologies {
+    text-align   : justify;
+    padding-right: 1em;
 }
 
 .details {
     font-weight: 400;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+    margin-top : 0;
 }
 
 .details>li {
-    padding-left  : 2em;
-    padding-bottom: 0.4em;
+    padding-bottom: 0.2em;
 }
 
-.date {
+.date,
+.technology,
+.location {
     color      : var(--secondary-text);
     display    : inline-block;
     font-weight: normal;
@@ -110,15 +138,15 @@
         display              : grid;
         width                : 210mm;
         height               : 297mm;
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns: .85fr .85fr 1fr;
         grid-template-areas  :
-            "personal personal"
-            "work education"
-            "work awards"
-            "work certifications"
-            "work community"
-            "work community"
-            "work community";
+            "personal personal personal"
+            "work work education"
+            "work work skills"
+            "work work awards"
+            "work work awards"
+            "work work community"
+            "certifications hobbies community";
     }
 }
 
@@ -133,9 +161,9 @@
         grid-template-areas  :
             "personal personal"
             "work education"
+            "work skills"
             "work awards"
             "work certifications"
-            "work community"
             "work community"
             "work community";
     }
