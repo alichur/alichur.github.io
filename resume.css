@@ -24,7 +24,6 @@
         "work"
         "education"
         "skills"
-        "awards"
         "certifications"
         "community"
         "hobbies";
@@ -142,9 +141,9 @@ p {
         grid-template-areas  :
             "personal personal personal"
             "work work education"
+            "work work education"
             "work work skills"
-            "work work awards"
-            "work work awards"
+            "work work skills"
             "work work community"
             "certifications hobbies community";
     }
@@ -157,15 +156,15 @@ p {
         display              : grid;
         width                : 210mm;
         height               : 297mm;
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns: .85fr .85fr 1fr;
         grid-template-areas  :
-            "personal personal"
-            "work education"
-            "work skills"
-            "work awards"
-            "work certifications"
-            "work community"
-            "work community";
+            "personal personal personal"
+            "work work education"
+            "work work education"
+            "work work skills"
+            "work work skills"
+            "work work community"
+            "certifications hobbies community";
     }
 
     html,
