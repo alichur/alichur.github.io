@@ -1,8 +1,4 @@
-.cv {
-    font-size: 80%;
-}
-
-/* VARIABLES */
+/* CSS VARIABLES */
 
 :root {
     --primary-color : #ffffd0;
@@ -11,13 +7,15 @@
     --close-spacing : 0.2em;
 }
 
+.cv {
+    font-size: 80%;
+}
+
+
 /* CSS GRID LAYOUT */
 
 .cv {
-    /* font-family                                                     : Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif; */
-    font-family                                                        : "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
-    /* font-family                                                     : system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif; */
-
+    font-family          : "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
     display              : grid;
     grid-template-columns: 1fr;
     grid-template-areas  : "personal"
@@ -30,13 +28,8 @@
         "community"
         "hobbies";
     row-gap   : 0px;
-    column-gap: 40px;
-    border    : 1px solid black;
+    column-gap: 32px;
     padding   : 2em;
-}
-
-.grid-area {
-    /* background-color: red; */
 }
 
 .personal {
@@ -159,12 +152,13 @@ p {
 
 /* LARGE SCREEN */
 
-@media (min-width: 700px) {
+@media (min-width: 700px),
+print {
     .cv {
         display              : grid;
         width                : 210mm;
         height               : 297mm;
-        grid-template-columns: .75fr .75fr 1fr;
+        grid-template-columns: .73fr .73fr 1fr;
         grid-template-rows   : 0.3fr 1fr 1fr 1fr 1fr .6fr 1fr;
 
         grid-template-areas:
@@ -172,40 +166,10 @@ p {
             "work work about"
             "work work education"
             "work work education"
-            /* "work work education" */
-            "work work skills"
-            "work  work community"
-            "certifications  hobbies community";
-
-    }
-}
-
-/* PRINTS CV TO A SINGLE A4 PAGE */
-
-@media print {
-    .cv {
-        display              : grid;
-        width                : 210mm;
-        height               : 297mm;
-        grid-template-columns: .85fr .85fr 1fr;
-        grid-template-areas  :
-            "personal personal contact"
-            "work work about"
-            "work work education"
-            "work work education"
             "work work skills"
             "work work community"
             "certifications  hobbies community";
-    }
 
-    html,
-    body {
-        width : 210mm;
-        height: 297mm;
-    }
-
-    .header {
-        display: none;
     }
 }
 
