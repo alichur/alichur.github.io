@@ -7,12 +7,7 @@
     --close-spacing : 0.2em;
 }
 
-.cv {
-    font-size: 80%;
-}
-
-
-/* CSS GRID LAYOUT */
+/* CSS GRID LAYOUT, MOBILE */
 
 .cv {
     font-family          : "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
@@ -69,6 +64,17 @@
 }
 
 /* TEXT AND LAYOUT */
+
+/* align cv to center of page */
+.wrapper {
+    padding        : 0;
+    display        : flex;
+    justify-content: center;
+}
+
+.icon {
+    margin-right: 5px;
+}
 
 .role,
 .institute {
@@ -152,16 +158,17 @@ p {
 
 /* LARGE SCREEN */
 
-@media (min-width: 700px),
+@media (min-width: 210mm),
 print {
     .cv {
+        font-size            : 80%;
         display              : grid;
         width                : 210mm;
         height               : 297mm;
         grid-template-columns: .73fr .73fr 1fr;
         grid-template-rows   : 0.3fr 1fr 1fr 1fr 1fr .6fr 1fr;
-
-        grid-template-areas:
+        box-shadow           : 0 5px 9px 0 rgba(0, 0, 0, 0.15);
+        grid-template-areas  :
             "personal personal contact"
             "work work about"
             "work work education"
@@ -170,6 +177,12 @@ print {
             "work work community"
             "certifications  hobbies community";
 
+    }
+}
+
+@media print {
+    .header {
+        display: none;
     }
 }
 
