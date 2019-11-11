@@ -70,14 +70,15 @@
 /* TEXT AND LAYOUT */
 
 /* align cv to center of page */
+.personal,
+.contact {
+    padding-bottom: 1em;
+}
+
 .wrapper {
     padding        : 0;
     display        : flex;
     justify-content: center;
-}
-
-.icon {
-    margin-right: 1px;
 }
 
 .role,
@@ -167,7 +168,7 @@ print {
         width                : 210mm;
         height               : 292mm;
         grid-template-columns: .73fr .73fr 1fr;
-        grid-template-rows   : 0.3fr 1fr 1fr 1fr 1fr 0.6fr 1.5fr;
+        grid-template-rows   : 0.3fr 1fr 1fr 1fr 1fr 0.6fr 1.3fr;
         box-shadow           : 0 5px 9px 0 rgba(0, 0, 0, 0.15);
         grid-template-areas  :
             "personal personal contact"
@@ -182,6 +183,10 @@ print {
 }
 
 @media print {
+    .cv {
+        box-shadow: none;
+    }
+
     .header {
 
         display: none;
