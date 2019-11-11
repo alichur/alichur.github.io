@@ -4,7 +4,9 @@
     --primary-color : #ffffd0;
     --accent-color  : #0C85D0;
     --secondary-text: grey;
-    --close-spacing : 0.2em;
+    --close-spacing : 0.3em;
+    --medium-spacing: 0.8em;
+
 }
 
 /* CSS GRID LAYOUT, MOBILE */
@@ -22,9 +24,11 @@
         "certifications"
         "community"
         "hobbies";
-    row-gap   : 0px;
-    column-gap: 32px;
-    padding   : 2em;
+    row-gap       : 0px;
+    column-gap    : 32px;
+    padding       : 2em;
+    padding-top   : 1em;
+    padding-bottom: 0;
 }
 
 .personal {
@@ -73,7 +77,7 @@
 }
 
 .icon {
-    margin-right: 5px;
+    margin-right: 1px;
 }
 
 .role,
@@ -95,11 +99,9 @@ p {
     padding: 0.5em;
 }
 
+.community,
 .institute {
-    margin-top: var(--close-spacing);
-}
-
-.community .institute {
+    margin-top   : var(--close-spacing);
     margin-bottom: var(--close-spacing);
 }
 
@@ -152,9 +154,8 @@ p {
     display              : grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows   : 1fr 1fr;
+    grid-gap             : 3px;
 }
-
-
 
 /* LARGE SCREEN */
 
@@ -164,9 +165,9 @@ print {
         font-size            : 80%;
         display              : grid;
         width                : 210mm;
-        height               : 297mm;
+        height               : 292mm;
         grid-template-columns: .73fr .73fr 1fr;
-        grid-template-rows   : 0.3fr 1fr 1fr 1fr 1fr .6fr 1fr;
+        grid-template-rows   : 0.3fr 1fr 1fr 1fr 1fr 0.6fr 1.5fr;
         box-shadow           : 0 5px 9px 0 rgba(0, 0, 0, 0.15);
         grid-template-areas  :
             "personal personal contact"
@@ -182,12 +183,14 @@ print {
 
 @media print {
     .header {
+
         display: none;
     }
 }
 
 @page {
     padding: 0;
-    margin : 0;
+    margin : 0cm;
     size   : A4 portrait;
+
 }
