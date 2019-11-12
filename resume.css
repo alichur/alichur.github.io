@@ -39,7 +39,6 @@
 }
 
 .contact {
-    font-size      : 0.75em;
     grid-area      : contact;
     display        : flex;
     flex-direction : column;
@@ -174,6 +173,10 @@ p {
 
 @media (min-width: 210mm),
 print {
+    .contact {
+        font-size: 0.75em;
+    }
+
     .cv {
         font-size            : 80%;
         display              : grid;
