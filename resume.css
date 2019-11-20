@@ -6,8 +6,10 @@
     --secondary-text: grey;
     --close-spacing : 0.3em;
     --medium-spacing: 0.8em;
-    --paper-height  : 292mm;
-    --paper-width   : 210mm;
+    --print-height  : 292mm;
+    --print-width   : 210mm;
+    --cv-height     : 86.18em;
+    --cv-width      : 62em;
 
 }
 
@@ -180,10 +182,10 @@ print {
     .cv {
         font-size            : 80%;
         display              : grid;
-        width                : var(--paper-width);
-        height               : var(--paper-height);
+        width                : var(--cv-width);
+        height               : var(--cv-height);
         grid-template-columns: .73fr .73fr 1fr;
-        grid-template-rows   : 0.3fr 1fr 1fr 1fr 1fr 0.6fr 1.3fr;
+        grid-template-rows   : 0.3fr 1fr 1.3fr 1fr 1fr 0.6fr 1.3fr;
         box-shadow           : 0 5px 9px 0 rgba(0, 0, 0, 0.15);
         grid-template-areas  :
             "personal personal contact"
@@ -204,6 +206,8 @@ print {
     }
 
     .cv {
+        width     : var(--print-width);
+        height    : var(--print-height);
         box-shadow: none;
     }
 
