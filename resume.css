@@ -180,7 +180,7 @@ print {
     }
 
     .cv {
-        font-size            : 80%;
+        font-size            : 100%;
         display              : grid;
         width                : var(--cv-width);
         height               : var(--cv-height);
@@ -206,6 +206,7 @@ print {
     }
 
     .cv {
+        font-size : 80%;
         width     : var(--print-width);
         height    : var(--print-height);
         box-shadow: none;
