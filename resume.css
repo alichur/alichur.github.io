@@ -17,9 +17,13 @@
 
 .cv {
     font-family          : "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+    display              : -ms-grid;
     display              : grid;
+    -ms-grid-columns     : 1fr;
     grid-template-columns: 1fr;
+    -webkit-box-shadow   : 0 5px 9px 0 rgba(0, 0, 0, 0.15);
     box-shadow           : 0 5px 9px 0 rgba(0, 0, 0, 0.15);
+    -ms-grid-rows        : auto 0px auto 0px auto 0px auto 0px auto 0px auto 0px auto 0px auto 0px auto;
     grid-template-areas  : "personal"
         "contact"
         "about"
@@ -29,34 +33,53 @@
         "certifications"
         "community"
         "hobbies";
-    row-gap       : 0px;
-    column-gap    : 32px;
-    padding       : 2em;
-    padding-top   : 1em;
-    padding-bottom: 0;
+    row-gap           : 0px;
+    -webkit-column-gap: 32px;
+    -moz-column-gap   : 32px;
+    column-gap        : 32px;
+    padding           : 2em;
+    padding-top       : 1em;
+    padding-bottom    : 0;
 }
 
 .personal {
-    grid-area: personal;
+    -ms-grid-row   : 1;
+    -ms-grid-column: 1;
+    grid-area      : personal;
 }
 
 .contact {
-    grid-area      : contact;
-    display        : flex;
-    flex-direction : column;
-    justify-content: flex-end;
+    -ms-grid-row         : 3;
+    -ms-grid-column      : 1;
+    grid-area            : contact;
+    display              : -webkit-box;
+    display              : -ms-flexbox;
+    display              : flex;
+    -webkit-box-orient   : vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction   : column;
+    flex-direction       : column;
+    -webkit-box-pack     : end;
+    -ms-flex-pack        : end;
+    justify-content      : flex-end;
 }
 
 .work {
-    grid-area: work;
+    -ms-grid-row   : 7;
+    -ms-grid-column: 1;
+    grid-area      : work;
 }
 
 .skills {
-    grid-area: skills;
+    -ms-grid-row   : 11;
+    -ms-grid-column: 1;
+    grid-area      : skills;
 }
 
 .education {
-    grid-area: education;
+    -ms-grid-row   : 9;
+    -ms-grid-column: 1;
+    grid-area      : education;
 }
 
 .awards {
@@ -64,11 +87,15 @@
 }
 
 .certifications {
-    grid-area: certifications;
+    -ms-grid-row   : 13;
+    -ms-grid-column: 1;
+    grid-area      : certifications;
 }
 
 .community {
-    grid-area: community;
+    -ms-grid-row   : 15;
+    -ms-grid-column: 1;
+    grid-area      : community;
 }
 
 /* TEXT AND LAYOUT */
@@ -88,10 +115,17 @@
 /* align cv to center of page */
 
 .wrapper {
-    padding       : 0;
-    display       : flex;
-    flex-direction: column;
-    align-items   : center;
+    padding              : 0;
+    display              : -webkit-box;
+    display              : -ms-flexbox;
+    display              : flex;
+    -webkit-box-orient   : vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction   : column;
+    flex-direction       : column;
+    -webkit-box-align    : center;
+    -ms-flex-align       : center;
+    align-items          : center;
 }
 
 .role,
@@ -165,10 +199,33 @@ p {
 }
 
 .hobby-grid {
+    display              : -ms-grid;
     display              : grid;
+    -ms-grid-columns     : 1fr 3px 1fr;
     grid-template-columns: 1fr 1fr;
+    -ms-grid-rows        : 1fr 3px 1fr;
     grid-template-rows   : 1fr 1fr;
     grid-gap             : 3px;
+}
+
+.hobby-grid>*:nth-child(1) {
+    -ms-grid-row   : 1;
+    -ms-grid-column: 1;
+}
+
+.hobby-grid>*:nth-child(2) {
+    -ms-grid-row   : 1;
+    -ms-grid-column: 3;
+}
+
+.hobby-grid>*:nth-child(3) {
+    -ms-grid-row   : 3;
+    -ms-grid-column: 1;
+}
+
+.hobby-grid>*:nth-child(4) {
+    -ms-grid-row   : 3;
+    -ms-grid-column: 3;
 }
 
 /* LARGE SCREEN */
@@ -181,11 +238,15 @@ print {
 
     .cv {
         font-size            : 80%;
+        display              : -ms-grid;
         display              : grid;
         width                : var(--cv-width);
         height               : var(--cv-height);
+        -ms-grid-columns     : .73fr .73fr 1fr;
         grid-template-columns: .73fr .73fr 1fr;
+        -ms-grid-rows        : 0.3fr 1fr 1.3fr 1fr 1fr 0.6fr 1.3fr;
         grid-template-rows   : 0.3fr 1fr 1.3fr 1fr 1fr 0.6fr 1.3fr;
+        -webkit-box-shadow   : 0 5px 9px 0 rgba(0, 0, 0, 0.15);
         box-shadow           : 0 5px 9px 0 rgba(0, 0, 0, 0.15);
         grid-template-areas  :
             "personal personal contact"
@@ -197,6 +258,53 @@ print {
             "certifications hobbies community";
 
     }
+
+    .personal {
+        -ms-grid-row        : 1;
+        -ms-grid-column     : 1;
+        -ms-grid-column-span: 2;
+
+    }
+
+    .contact {
+        -ms-grid-row   : 1;
+        -ms-grid-column: 3;
+
+    }
+
+    .work {
+        -ms-grid-row        : 2;
+        -ms-grid-row-span   : 5;
+        -ms-grid-column     : 1;
+        -ms-grid-column-span: 2;
+
+    }
+
+    .skills {
+        -ms-grid-row   : 5;
+        -ms-grid-column: 3;
+
+    }
+
+    .education {
+        -ms-grid-row     : 3;
+        -ms-grid-row-span: 2;
+        -ms-grid-column  : 3;
+
+    }
+
+    .certifications {
+        -ms-grid-row   : 7;
+        -ms-grid-column: 1;
+
+    }
+
+    .community {
+        -ms-grid-row     : 6;
+        -ms-grid-row-span: 2;
+        -ms-grid-column  : 3;
+
+    }
 }
 
 @media print {
@@ -206,9 +314,10 @@ print {
     }
 
     .cv {
-        width     : var(--print-width);
-        height    : var(--print-height);
-        box-shadow: none;
+        width             : var(--print-width);
+        height            : var(--print-height);
+        -webkit-box-shadow: none;
+        box-shadow        : none;
     }
 
     .header {
