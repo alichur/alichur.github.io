@@ -16,6 +16,14 @@
 /* CSS GRID LAYOUT, MOBILE */
 
 .cv {
+    /* for IE10 and 11 browsers that don't support Grid or CSS variables */
+    display           : -ms-flexbox;
+    display           : flex;
+    -ms-flex-direction: column;
+    flex-direction    : column;
+    width             : 62em;
+    /* ----------------------- */
+
     font-family          : "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
     display              : grid;
     grid-template-columns: 1fr;
@@ -196,12 +204,6 @@ print {
             "work work community"
             "certifications hobbies community";
 
-    }
-}
-
-@supports (display: grid) {
-    .cv {
-        background-color: blue
     }
 }
 
