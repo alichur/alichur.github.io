@@ -199,6 +199,12 @@ print {
     }
 }
 
+@supports (display: grid) {
+    .cv {
+        background-color: blue
+    }
+}
+
 @media print {
     .cv a {
         color          : inherit;
