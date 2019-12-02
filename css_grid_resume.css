@@ -1,0 +1,244 @@
+/* CSS VARIABLES */
+
+:root {
+    --primary-color : #ffffd0;
+    --accent-color  : #0C85D0;
+    --secondary-text: grey;
+    --close-spacing : 0.3em;
+    --medium-spacing: 0.8em;
+    --paper-height  : 292mm;
+    --paper-width   : 210mm;
+
+}
+
+/* CSS GRID LAYOUT, MOBILE */
+.resume {
+    font-family          : "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+    display              : grid;
+    grid-template-columns: 1fr;
+    grid-template-areas  : "name"
+        "image"
+        "about"
+        "work"
+        "education"
+        "skills"
+        "certifications"
+        "community"
+        "hobbies";
+    row-gap   : 0px;
+    column-gap: 32px;
+    padding   : 2em 2em 0 2em;
+    box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.15);
+
+}
+
+.name {
+    grid-area      : name;
+    display        : flex;
+    flex-direction : column;
+    align-items    : center;
+    justify-content: center;
+}
+
+.image {
+    grid-area      : image;
+    font-size      : 0.85em;
+    display        : flex;
+    flex-direction : column;
+    align-items    : center;
+    justify-content: center;
+
+}
+
+.about {
+    grid-area: about;
+}
+
+.work {
+    grid-area: work;
+}
+
+.education {
+    grid-area: education;
+}
+
+.skills {
+    grid-area: skills;
+}
+
+.certifications {
+    grid-area: certifications;
+}
+
+.community {
+    grid-area: community;
+}
+
+.hobbies {
+    grid-area: hobbies;
+}
+
+.avatar {
+    width : 100px;
+    height: 100px;
+}
+
+.name,
+.image {
+    padding-bottom: 1em;
+}
+
+.role,
+.institute {
+    color: var(--accent-color);
+}
+
+p {
+    line-height: 1.5;
+}
+
+.job-title,
+.degree {
+    margin-bottom: 0;
+}
+
+.community,
+.institute,
+.heading,
+.avatar {
+    margin-top   : var(--close-spacing);
+    margin-bottom: var(--close-spacing);
+}
+
+.section-name {
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size     : 0.9em;
+    color         : var(--secondary-text);
+}
+
+.heading {
+    font-size  : 3em;
+    font-weight: 400;
+}
+
+.technologies {
+    text-align   : justify;
+    padding-right: 1em;
+}
+
+.details {
+    font-weight: 400;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+    margin-top : 0.5em;
+}
+
+.details>li {
+    padding-bottom: 0.2em;
+}
+
+.date,
+.location {
+    color      : var(--secondary-text);
+    display    : inline-block;
+    font-weight: normal;
+}
+
+.role {
+    font-size    : 1.5em;
+    margin-bottom: 0;
+}
+
+.hobby-grid {
+    display              : grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows   : 1fr 1fr;
+    grid-gap             : 3px;
+}
+
+/* aligns resume to center of page */
+
+.wrapper {
+    padding       : 2em 0 0 0;
+    display       : flex;
+    flex-direction: column;
+    align-items   : center;
+}
+
+/* MEDIUM  SCREEN */
+
+@media (min-width: 650px) {
+    .resume {
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas  :
+            "name image"
+            "about about"
+            "work work"
+            "education education"
+            "skills skills"
+            "certifications certifications"
+            "hobbies hobbies"
+            "community community";
+        box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.15);
+    }
+
+    .name {
+        justify-content: center;
+        align-items    : flex-start;
+    }
+
+}
+
+/* LARGE SCREEN AND PRINT LAYOUT */
+
+@media (min-width: 900px),
+print {
+    .resume {
+        width                : 80%;
+        grid-template-columns: .75fr .75fr 1fr;
+        grid-template-rows   : 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas  :
+            "name name image"
+            "work work about"
+            "work work education"
+            "work work education"
+            "work work skills"
+            "certifications hobbies community"
+            "certifications hobbies community";
+
+    }
+
+    .heading {
+        font-size: 3.5em;
+    }
+
+    .role {
+        font-size: 2em;
+    }
+}
+
+@media print {
+    .resume a {
+        color          : inherit;
+        text-decoration: none;
+    }
+
+    .resume {
+        font-size : 80%;
+        width     : var(--paper-width);
+        height    : var(--paper-height);
+        box-shadow: none;
+    }
+
+    .name {
+        justify-content: center;
+        align-items    : flex-start;
+    }
+}
+
+@page {
+    padding: 0;
+    margin : 0cm;
+    size   : A4 portrait;
+
+}
