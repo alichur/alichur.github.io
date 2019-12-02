@@ -16,8 +16,9 @@
     font-family          : "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
     display              : grid;
     grid-template-columns: 1fr;
-    grid-template-areas  : "name"
+    grid-template-areas  :
         "image"
+        "name"
         "about"
         "work"
         "education"
@@ -118,7 +119,7 @@ p {
 }
 
 .heading {
-    font-size  : 3em;
+    font-size  : 2em;
     font-weight: 400;
 }
 
@@ -145,7 +146,7 @@ p {
 }
 
 .role {
-    font-size    : 1.5em;
+    font-size    : 1em;
     margin-bottom: 0;
 }
 
@@ -187,6 +188,14 @@ p {
         align-items    : flex-start;
     }
 
+    .heading {
+        font-size: 3.5em;
+    }
+
+    .role {
+        font-size: 2em;
+    }
+
 }
 
 /* LARGE SCREEN AND PRINT LAYOUT */
@@ -206,14 +215,6 @@ print {
             "certifications hobbies community"
             "certifications hobbies community";
 
-    }
-
-    .heading {
-        font-size: 3.5em;
-    }
-
-    .role {
-        font-size: 2em;
     }
 }
 
