@@ -36,6 +36,10 @@
     background-color: #ff8a00;
 }
 
+.ssl-tls .title {
+    background-color: #00CAAF;
+}
+
 .title,
 .details {
     margin          : 0;
