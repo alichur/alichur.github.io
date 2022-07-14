@@ -29,7 +29,11 @@
 }
 
 .modules .title {
-    background-color: black;
+    background-color: #2f4858;
+}
+
+.patterns .title {
+    background-color: #874e99;
 }
 
 .css-grid-cv .title {
