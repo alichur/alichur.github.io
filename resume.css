@@ -27,8 +27,8 @@
         "education"
         "skills"
         "certifications"
-        "community"
-        "hobbies";
+        "community";
+
     row-gap       : 0px;
     column-gap    : 32px;
     padding       : 2em;
@@ -100,13 +100,20 @@
 }
 
 p {
-    line-height: 1.5;
+    line-height: 1.4;
 }
 
 .job-title,
 .award,
 .degree {
     margin-bottom: 0;
+}
+
+.talk,
+.certification {
+    margin-bottom: 0.3em;
+    margin-top   : 0.3em;
+
 }
 
 .contact-item {
@@ -119,6 +126,11 @@ p {
     margin-bottom: var(--close-spacing);
 }
 
+.community ul {
+    padding-left: 0;
+    list-style  : none;
+}
+
 .section-name {
     text-transform: uppercase;
     letter-spacing: 0.2em;
@@ -129,7 +141,9 @@ p {
 .name {
     font-size    : 3em;
     font-weight  : 400;
+    margin-top   : var(--close-spacing);
     margin-bottom: var(--close-spacing);
+
 }
 
 
@@ -156,12 +170,14 @@ p {
     font-weight: normal;
 }
 
-.technology {
+.technology,
+.meetup {
     color: #0966a0;
 }
 
 .role {
     margin-bottom: 0;
+    margin-top   : var(--close-spacing);
 }
 
 .hobby-grid {
@@ -184,17 +200,17 @@ print {
         display              : grid;
         width                : var(--cv-width);
         height               : var(--cv-height);
-        grid-template-columns: .73fr .73fr 1fr;
-        grid-template-rows   : 0.3fr 1fr 1.3fr 1fr 1fr 0.6fr 1.3fr;
+        grid-template-columns: .75fr .75fr 0.95fr;
+        grid-template-rows   : 0.3fr 1fr 1.0fr 1.0fr 0.85fr 0.35fr 1.55fr;
         box-shadow           : 0 5px 9px 0 rgba(0, 0, 0, 0.15);
         grid-template-areas  :
             "personal personal contact"
             "work work about"
             "work work education"
             "work work education"
+            "work work certifications"
             "work work skills"
-            "work work community"
-            "certifications hobbies community";
+            "work work community";
 
     }
 }
