@@ -141,7 +141,7 @@ p {
     font-size    : 3em;
     font-weight  : 400;
     margin-top   : var(--close-spacing);
-    margin-bottom: var(--close-spacing);
+    margin-bottom: 0;
 
 }
 
@@ -171,14 +171,10 @@ p {
 
 .technology,
 .meetup {
-    color: var(--accent-color);
-}
-
-.technology {
+    color      : var(--accent-color);
     font-size  : 0.8em;
-    font-weight: 500;
+    font-weight: 600;
 }
-
 
 .role {
     margin-bottom: 0;
