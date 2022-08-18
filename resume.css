@@ -2,7 +2,7 @@
 
 :root {
     --primary-color : #ffffd0;
-    --accent-color  : #0C85D0;
+    --accent-color  : #357f4c;
     --secondary-text: grey;
     --close-spacing : 0.3em;
     --medium-spacing: 0.8em;
@@ -79,7 +79,6 @@
 }
 
 .pdf-link {
-    color        : var(--accent-color);
     text-align   : center;
     width        : 100%;
     margin-bottom: 2em;
@@ -172,8 +171,14 @@ p {
 
 .technology,
 .meetup {
-    color: #0966a0;
+    color: var(--accent-color);
 }
+
+.technology {
+    font-size  : 0.8em;
+    font-weight: 500;
+}
+
 
 .role {
     margin-bottom: 0;
