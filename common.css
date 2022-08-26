@@ -170,6 +170,17 @@ body {
     background-color: #00acee;
 }
 
+.stackoverflow {
+    background: url("icons/twitter.svg");
+
+    /* background: url("icons/stackoverflow.svg"); */
+}
+
+.stackoverflow:hover,
+.stackoverflow:active {
+    background-color: #f48225;
+}
+
 .email {
     background-image: url("icons/email.svg");
 }

@@ -2,7 +2,7 @@
 
 :root {
     --primary-color : #ffffd0;
-    --accent-color  : #357f4c;
+    --accent-color  : #1cac78;
     --secondary-text: grey;
     --close-spacing : 0.3em;
     --medium-spacing: 0.8em;
@@ -15,12 +15,13 @@
 
 /* CSS GRID LAYOUT, MOBILE */
 
-.cv {
-    font-family          : "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
-    display              : grid;
-    grid-template-columns: 1fr;
-    box-shadow           : 0 5px 9px 0 rgba(0, 0, 0, 0.15);
-    grid-template-areas  : "personal"
+.cv,
+.cv-hiring-engineer {
+    font-family             : "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+    display                 : grid;
+    grid-template-columns   : 1fr;
+    /* box-shadow           : 0 5px 9px 0 rgba(0, 0, 0, 0.15); */
+    grid-template-areas     : "personal"
         "contact"
         "about"
         "work"
@@ -110,7 +111,7 @@ p {
 
 .talk,
 .certification {
-    margin-bottom: 0.3em;
+    margin-bottom: 0.40em;
     margin-top   : 0.3em;
 
 }
@@ -185,7 +186,7 @@ p {
     display              : grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows   : 1fr 1fr;
-    grid-gap             : 3px;
+    grid-gap             : 20px;
 }
 
 /* LARGE SCREEN */
@@ -214,15 +215,36 @@ print {
             "work work community";
 
     }
+
+    .cv-hiring-engineer {
+        font-size               : 100%;
+        display                 : grid;
+        width                   : var(--cv-width);
+        height                  : var(--cv-height);
+        grid-template-columns   : .75fr .75fr 0.95fr;
+        grid-template-rows      : 1fr 2.2fr 1.0fr 0.9fr 1fr 3.15fr;
+        /* box-shadow           : 0 5px 9px 0 rgba(0, 0, 0, 0.15); */
+        grid-template-areas     :
+            "personal personal contact"
+            "work work education"
+            "work work certifications"
+            "work work skills"
+            "work work community"
+            "work work hobbies";
+
+    }
 }
 
 @media print {
-    .cv a {
+
+    .cv a,
+    .cv-hiring-engineer a {
         color          : inherit;
         text-decoration: none;
     }
 
-    .cv {
+    .cv,
+    .cv-hiring-engineer {
         font-size : 80%;
         width     : var(--print-width);
         height    : var(--print-height);

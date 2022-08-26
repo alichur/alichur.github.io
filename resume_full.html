@@ -1,55 +1,328 @@
-<!-- This will be a second, more developer relations skill based resume -->
-<!-- This is in progress and not currently hosted on the site. -->
-<section class="grid-area community">
-    <hr />
-    <h2 class="section-name">
-        Community
-    </h2>
-    <hr />
-    <p class=talk>
-        Gave a lightning talk on SSL/TLS
-        <span class="meetup">CHCH JS JavaScript meetup</span>
-    </p>
-    <p class=talk>
-        Gave a lunch time presentation on techniques to expand diversity in Software hiring pool
-        <span class="meetup">Media Suite</span>
-    </p>
-    <p class=talk>
-        Presented Behaviour Driven Development techniques
-        <span class="meetup">Christchurch Agile Professionals Network</span>
-    </p>
-    <p class=talk>
-        Presented Facilitation techniques for agile meetings
-        <span class="meetup">Christchurch Agile Professionals Network</span>
-    </p>
-    <p class=talk>
-        Spoke at multiple Christchurch schools to encourage students to consider a
-        technology career <span class="meetup">Futureintech</span>
-    </p>
-    <p class=talk>
-        Spoke at Canterbury University about careers in technology, as a reprisentative of Orion Health
-        <span class="meetup">Canterbury University guest lecture</span>
-    </p>
-    <p class=talk>
-        Discussed careeers with prospective students as an Orion Health representitive <span class="meetup">Canterbury
-            University Careers fair</span>
-    </p>
+<!doctype html>
+<html lang="en">
 
-</section>
-<section class="grid-area hobbies">
-    <hr />
-    <h2 class="section-name">
-        Hobbies
-    </h2>
-    <hr />
-    <div class="hobby-grid">
-        <p class="hobby"><i class="icon fas fa-water"></i> Surfing</p>
-        <p class="hobby"><i class="icon fas fa-pepper-hot"></i> Sichuan food</p>
-        <p class="hobby"><i class="icon fas fa-laptop-code"></i> Tech Blogging </p>
-        <p class="hobby"><i class="icon fas fa-hiking"></i> Hiking</p>
-    </div>
-</section>
-</main>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script defer src="https://use.fontawesome.com/releases/v5.11.2/js/all.js"></script>
+    <title>Ali Churcher - Resume</title>
+    <link href="common.css" rel="stylesheet">
+    <link href="resume.css" rel="stylesheet">
+    <script src="menu.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <button tabindex="0" class="hamburger-toggle" id="js-menu-toggle">
+                <img class="hamburger-svg" src="./hamburger.svg" />
+            </button>
+            <ul class="nav-items" id="js-nav-items">
+                <li class="nav-item" tabindex="0"><a href="index.html" tabindex="-1" role="menuitem">Home</a></li>
+                <li class="nav-item" tabindex="0"><a href="blog.html" tabindex="-1" role="menuitem">Blog</a></li>
+                <li class="nav-item" tabindex="0"><a href="resume.html" tabindex="-1" role="menuitem">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="wrapper">
+        <a class="pdf-link" href="Ali_Churcher_Resume.pdf" target=> PDF <i class="fas fa-download"></i></a>
+        <section class="cv">
+            <section class="grid-area personal">
+                <div class="intro">
+                    <h1 class="name">
+                        Ali Churcher
+                    </h1>
+                    <h2 class="role">
+                        Software Engineer
+                    </h2>
+                </div>
+            </section>
+
+            <section class="grid-area contact">
+                <a class="contact-item"><i class="icon far fa-envelope"></i> churcher.ali@gmail.com</a>
+                <a class="contact-item"><i class="icon fas fa-phone-alt"></i> +64 27 403 9852</a>
+
+                <a class="contact-item" href="https://github.com/alichur"><i class="icon fab fa-github"></i>
+                    https://github.com/alichur</a>
+                <a class="contact-item" href="https://alichur.github.io/"><i class="icon fas fa-link"></i>
+                    https://alichur.github.io/</a>
+            </section>
+            <section class="grid-area work">
+                <hr />
+                <h2 class="section-name">
+                    Work Experience
+                </h2>
+                <hr />
+                <span class="date"> April 2022 - Present · Working on hobby projects, travelling, and completing a
+                    Flutter bootcamp via Udemy.</span>
+                <h3 class="job-title">
+                    Senior Full-Stack Software Developer to Technical Lead
+                </h3>
+                <h4 class="institute">
+                    Media Suite <span class="date">Feb 2020 - March 2022</span> · <span class="location">Christchurch,
+                        New Zealand</span>
+                </h4>
+                <ul class="details">
+                    <li>Implemented, tested, reviewed and deployed new features for a web application.
+                        <span class="technology">Python, Django,
+                            JavaScript, Ember, Git, CircleCI
+                        </span></li>
+                    </li>
+                    <li>Collaborated with partners to help expose their data for consumption via database replication
+                        and RESTful APIs
+                        <span class="technology">SymemtricDS, MutualTLS
+                        </span></li>
+                    </li>
+                    <li>Optimised database queries and monitored hosted environments for performance and
+                        reliability <span class="technology">AWS, Postgres</span></li>
+                    <li>Led the project’s first go-live
+                    </li>
+                    <li>Created technical designs for upcoming features, and facilitated technical design meetings </li>
+                    <li>
+                        Planned and conducted internal security reviews
+                    </li>
+                    <li>
+                        Coached a developer including facilitating 1on1 sessions
+                    </li>
+
+
+                </ul>
+                <h3 class="job-title">
+                    Freelance technical blogger
+                </h3>
+                <h4 class="institute">
+                    CSS-Tricks.com <span class="date">Nov 2019 - Jan 2020</span> · <span class="location">
+                        Remote</span>
+                </h4>
+                <ul class="details">
+                    <li>While moving country from Germany to New Zealand I Pitched two ideas for articles on the popular
+                        CSS-Tricks.com. Both of these were accepted.
+                    </li>
+                    <li>Wrote two full articles and collaborated with the editor to ensure all writing style guidelines
+                        were met, and that the article was presented in an <span
+                            class="technology">Flutter</span></span>
+                    </li>
+                </ul>
+                <h3 class="job-title">
+                    Intermediate to Senior Front-End Software Developer
+                </h3>
+                <h4 class="institute">
+                    Liefery <span class="date">Apr 2017 - Sep 2019</span> · <span class="location">Berlin,
+                        Germany</span>
+                </h4>
+                <ul class="details">
+                    <li>Rewrote an existing Android mobile application <span class="technology">Flutter</span></span>
+                    </li>
+                    <li>Architected and wrote our end-to-end automated test suite <span
+                            class="technology">Flutter</span>
+                    </li>
+                    <li>
+                        Created two websites from architecture to deployment <span class="technology">React</span>
+                    </li>
+                    <li>
+                        Architected and Implemented a CSV uploader <span class="technology">AngularJS</span>
+                    </li>
+                    <li>Introduced and drove team processes for smaller features, quicker delivery, and a
+                        closer working relationship with our tester.</li>
+                    <li>Implemented large backend model changes and added new API endpoints <span
+                            class="technology">Ruby on
+                            Rails</span></li>
+                    </li>
+                </ul>
+                <p class="company-blurb"></p>
+                <h3 class="job-title">
+                    Intermediate Software Engineer
+                </h3>
+                <h4 class="institute">Orion Health <span class="date">Apr 2015 - Apr 2016</span> · <span
+                        class="location">Christchurch, New Zealand</span></h3>
+
+
+                    <ul class="details">
+                        <li>
+                            Implemented new features, bug fixes and code refactoring <span class="technology">Java,
+                                YUI3</span></li>
+                        <li>
+                            Highly cross-functional: contributed to testing, business analysis and
+                            documentation </li>
+
+                        <li>
+                            Coached a graduate JavaScript developer </li>
+                        <li>
+                            Selected by the CEO as Junior Development Board member</li>
+
+                        <li>
+                            Was Scrum master for a distributed team that collaborated with an outsourcing
+                            company
+                        </li>
+                    </ul>
+                    <h3 class="job-title">
+                        Junior to Intermediate Test Engineer
+                    </h3>
+                    <h4 class="institute">Orion Health <span class="date">Jan 2012 - Apr 2015</span> · <span
+                            class="location">Christchurch, New Zealand</span></h4>
+
+
+                    <ul class="details">
+                        <li>
+                            Ensured Patient safety via exploratory testing and test planning
+                        </li>
+                        <li>
+                            Wrote Automated end-to-end tests <span class="technology">Selenium, Java,
+                                Cucumber</span>
+                        </li>
+                        <li>
+                            Set up and facilitated an office-wide testing guild
+                        </li>
+                        <li>
+                            Managed testing virtual machines and databases <span class="technology">Oracle, SQL
+                                Server,
+                                Virtual Box</span>
+                        </li>
+                    </ul>
+                    <h3 class="job-title">
+                        Software Engineering Tutor
+                    </h3>
+                    <h4 class="institute">
+                        Lincoln University <span class="date">2011 Semester One</span> · <span class="location">Lincoln,
+                            New Zealand</span>
+                    </h4>
+                    <h3 class="job-title">
+                        Research Assistant
+                    </h3>
+                    <h4 class="institute">
+                        University of Canterbury <span class="date">Nov 2011- Feb 2012</span> · <span
+                            class="location">Christchurch, New Zealand</span>
+                    </h4>
+            </section>
+            <section class="grid-area about">
+                <hr />
+                <h2 class="section-name">
+                    About me
+                </h2>
+                <hr />
+                <p>I'm proud of being a friendly approachable developer who others choose to come to with questions.
+                    I enjoy creating accessible, useful software from well tested code that can be understood by
+                    developers of
+                    all levels, now and in years to come.
+                </p>
+            </section>
+            <section class="grid-area education">
+                <hr />
+                <h2 class="section-name">
+                    Education
+                </h2>
+                <hr />
+                <h3 class="degree">
+                    Graduate Diploma in Software & Information Technology
+                </h3>
+                <h4 class="institute">
+                    Lincoln University
+                    <span class="date">2010-2011</span> · <span class="location">NZ</span>
+                </h4>
+
+                <p class="award">Awarded the Jade Prize for first place in the third year Software Engineering paper
+                </p>
+                <h3 class="degree">
+                    Bachelor of Music with Honours
+                </h3>
+                <h4 class="institute">
+                    University of Otago <span class="date">2006-2009</span> · <span class="location">NZ</span>
+                </h4>
+
+                <p class="award"> Awarded the Charles Begg Prize for the top student in Music Fourth Year Honours
+                </p>
+                <p class="award"> Awarded the Bonded Merit Scholarship (2007, 2008, 2009)</p>
+
+
+            </section>
+            <section class="grid-area certifications">
+                <hr />
+                <h2 class="section-name">
+                    Certifications
+                </h2>
+                <hr />
+                <p class="certification">
+                    Oracle Certified Java Developer
+                </p>
+                <p class="certification">
+                    ISTQB
+                </p>
+                <p class="certification">
+                    A.T.C.L. Diploma, Flute
+                </p>
+            </section>
+            <section class="grid-area skills">
+                <hr />
+                <h2 class="section-name">
+                    Skills
+                </h2>
+                <hr />
+                <div class="skilz"></div>
+                <p class="details technologies">Flutter · Dart · JavaScript · Python · AWS · HTML5 · CSS · React · Redux
+                    ·
+                    Ruby ·
+                    Rails
+                    · Java
+                    · SQL ·
+                    Ember · CircleCI · AngularJS · Gatsby · Jest · Mocha · Jasmine · Cucumber · Selenium · GIT · CSS
+                    Modules · Sass
+                    ·
+                    Postgres ·
+                    Jenkins ·
+                    Docker</p>
+                </p>
+            </section>
+            <section class="grid-area community">
+                <hr />
+                <h2 class="section-name">
+                    Community
+                </h2>
+                <hr />
+                <p class=talk>
+                    Gave a lightning talk on SSL/TLS
+                    <span class="meetup">CHCH JS JavaScript meetup</span>
+                </p>
+                <p class=talk>
+                    Gave a lunch time presentation on techniques to expand diversity in Software hiring pool
+                    <span class="meetup">Media Suite</span>
+                </p>
+                <p class=talk>
+                    Presented Behaviour Driven Development techniques
+                    <span class="meetup">Christchurch Agile Professionals Network</span>
+                </p>
+                <p class=talk>
+                    Presented Facilitation techniques for agile meetings
+                    <span class="meetup">Christchurch Agile Professionals Network</span>
+                </p>
+                <p class=talk>
+                    Spoke at multiple Christchurch schools to encourage students to consider a
+                    technology career <span class="meetup">Futureintech</span>
+                </p>
+                <p class=talk>
+                    Spoke at Canterbury University about careers in technology, as a reprisentative of Orion Health
+                    <span class="meetup">Canterbury University guest lecture</span>
+                </p>
+                <p class=talk>
+                    Discussed careeers with prospective students as an Orion Health representitive <span
+                        class="meetup">Canterbury University Careers fair</span>
+                </p>
+
+            </section>
+            <section class="grid-area hobbies">
+                <hr />
+                <h2 class="section-name">
+                    Hobbies
+                </h2>
+                <hr />
+                <div class="hobby-grid">
+                    <p class="hobby"><i class="icon fas fa-water"></i> Surfing</p>
+                    <p class="hobby"><i class="icon fas fa-pepper-hot"></i> Sichuan food</p>
+                    <p class="hobby"><i class="icon fas fa-laptop-code"></i> Tech Blogging </p>
+                    <p class="hobby"><i class="icon fas fa-hiking"></i> Hiking</p>
+                </div>
+            </section>
+    </main>
 </body>
 
 </html>
