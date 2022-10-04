@@ -189,7 +189,7 @@ p {
 
 /* LARGE SCREEN */
 
-@media (min-width: 62em),
+@media (min-width: 72em),
 print {
     .contact {
         font-size: 0.75em;
