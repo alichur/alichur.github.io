@@ -200,7 +200,7 @@ print {
         display              : grid;
         width                : var(--cv-width);
         height               : var(--cv-height);
-        grid-template-columns: .75fr .75fr 0.95fr;
+        grid-template-columns: .74fr .74fr 0.97fr;
         grid-template-rows   : 0.3fr 1fr 1.0fr 1.0fr 0.85fr 0.35fr 1.55fr;
         box-shadow           : 0 5px 9px 0 rgba(0, 0, 0, 0.15);
         grid-template-areas  :
